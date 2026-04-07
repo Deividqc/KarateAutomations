@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-2-thread-1","id":1},{"content":"pool-2-thread-2","id":2},{"content":"pool-2-thread-3","id":3},{"content":"pool-2-thread-4","id":4},{"content":"pool-2-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"Conduit\/feature\/HomePage[1:7]","start":1774980398007,"end":1774980400708,"title":"Conduit\/feature\/HomePage[1:7] 13:06:38.007-13:06:40.708 Get all tags"},{"id":2,"group":2,"content":"Conduit\/feature\/HomePage[2:13]","start":1774980398007,"end":1774980400974,"title":"Conduit\/feature\/HomePage[2:13] 13:06:38.007-13:06:40.974 Get 10 articles (With parameters - another way)"},{"id":3,"group":3,"content":"Conduit\/feature\/PrimerosEjemplos[1:3]","start":1774980398007,"end":1774980400765,"title":"Conduit\/feature\/PrimerosEjemplos[1:3] 13:06:38.007-13:06:40.765 Get all tags"},{"id":4,"group":4,"content":"Conduit\/feature\/PrimerosEjemplos[2:9]","start":1774980398007,"end":1774980401078,"title":"Conduit\/feature\/PrimerosEjemplos[2:9] 13:06:38.007-13:06:41.078 Get 10 articles","className":"failed"},{"id":5,"group":5,"content":"Conduit\/feature\/PrimerosEjemplos[3:15]","start":1774980398007,"end":1774980400760,"title":"Conduit\/feature\/PrimerosEjemplos[3:15] 13:06:38.007-13:06:40.760 Get 10 articles (With parameters)","className":"failed"},{"id":6,"group":1,"content":"Conduit\/feature\/PrimerosEjemplos[4:22]","start":1774980400721,"end":1774980401523,"title":"Conduit\/feature\/PrimerosEjemplos[4:22] 13:06:40.721-13:06:41.523 Get 10 articles (With parameters - another way)","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
