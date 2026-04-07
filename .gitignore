@@ -1,0 +1,24 @@
+# --- Maven y Compilación ---
+target/              # Excluye TODA la carpeta de salida (incluye clases y reportes)
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.nextReleaseBackup
+release.properties
+
+# --- Reportes específicos de Karate ---
+# Aunque 'target/' ya los cubre, es buena práctica listarlos por si cambias la ruta
+karate-reports/
+surefire-reports/
+
+# --- IDEs (VS Code, IntelliJ, Eclipse) ---
+.vscode/
+.idea/
+*.iml
+.settings/
+.classpath
+.project
+.factorypath
+
+# --- Archivos de sistema ---
+.DS_Store
+Thumbs.db
