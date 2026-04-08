@@ -1,0 +1,1777 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: Conduit/feature/Articles.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Conduit</td>
+      <td>08 Apr 2026, 17:20</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">Conduit/feature/Articles.feature</td>
+          <td      class="passed"    >41</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">41</td>
+
+          <td  class="passed"    >2</td>
+          <td >0</td>
+          <td class="total">2</td>
+
+          <td class="duration" data-value="5050317700">5.050</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Conduit/feature/Articles.feature</span>
+
+
+</div>
+
+        <div class="description indention">'Post' Tests for submitting articles</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.429</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># This section is commented out since we are calling the CreateToken.feature which already has the url defined,</div>
+          <div class="comment indention"># if we leave it here it will override the url defined in the CreateToken.feature and the test will fail since</div>
+          <div class="comment indention"># the url is different for the login and for the articles.</div>
+          <div class="comment indention"># Replaced by last line below of this section</div>
+          <div class="comment indention"># Given url apiURL</div>
+          <div class="comment indention"># Given path 'users/login'</div>
+          <div class="comment indention"># And request {&quot;user&quot;:{&quot;email&quot;:&quot;jesus.quispe@globant.com&quot;,&quot;password&quot;:&quot;Gabylu212208.&quot;}}</div>
+          <div class="comment indention"># When method POST</div>
+          <div class="comment indention"># Then status 200</div>
+          <div class="comment indention"># * def token = response.user.token</div>
+          <div class="comment indention"># Changing function call by callonce, to read only one the create Token feature and reuse the token for all scenarios.</div>
+          <div class="comment indention"># Add parameters to be executed by anyone.</div>
+          <div class="comment indention"># This line is deprecated since we implemented gathering token on karate-config.js</div>
+          <div class="comment indention"># * def tokenResponse  = callonce read('classpath:helpers/CreateToken.feature')</div>
+          <div class="comment indention"># Replaced by configurations in karate-config.js : {&quot;email&quot;:&quot;jesus.quispe@globant.com&quot;,&quot;password&quot;:&quot;Gabylu212208.&quot;}</div>
+          <div class="comment indention"># This line is deprecated since we implemented gathering tokenon karate-config.js</div>
+          <div class="comment indention"># * def token = tokenResponse.authToken</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiURL</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>17:20:05.446 karate.env system property was: null 
+17:20:07.412 this thread waited 1944 milliseconds for callSingle lock: classpath:helpers/CreateToken.feature
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def articleRequestbody = read('classpath:resources/newArticleRequest.json')</span>
+
+  <span class="lead-duration duration">0.018</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestbody.article.title = dataGenerator.getRandomArticleValues().title</span>
+
+  <span class="lead-duration duration">0.256</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestbody.article.description = dataGenerator.getRandomArticleValues().description</span>
+
+  <span class="lead-duration duration">0.057</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestbody.article.body = dataGenerator.getRandomArticleValues().body</span>
+
+  <span class="lead-duration duration">0.043</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestbody.article.tagList = dataGenerator.getRandomArticleValues().tagList</span>
+
+  <span class="lead-duration duration">0.041</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.593</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create a new article from JSON file</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request articleRequestbody</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.590</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>17:20:07.855 request:
+1 &gt; POST https://conduit-api.bondaracademy.com/api/articles
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTY4NjgwNSwiZXhwIjoxNzgwODcwODA1fQ.JSJ-nqAhFuKokw6n-xi6-KeMWuGL6BZZ0DsPg2x_Ylo
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 120
+1 &gt; Host: conduit-api.bondaracademy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;article&quot;:{&quot;title&quot;:&quot;Ronel Rivers&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Every flight begins with a fall.&quot;,&quot;tagList&quot;:[&quot;Long&quot;]}}
+
+17:20:08.441 response time in milliseconds: 585
+1 &lt; 201
+1 &lt; x-powered-by: Express
+1 &lt; vary: Origin
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; etag: W/&quot;193-stugAHIeZw9JkvraR+8j+1/9bNw&quot;
+1 &lt; x-cloud-trace-context: d4c6745335ef2c87409e077eef2e77ff
+1 &lt; date: Wed, 08 Apr 2026 22:20:06 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 403
+{&quot;article&quot;:{&quot;slug&quot;:&quot;Ronel-Rivers-51031&quot;,&quot;title&quot;:&quot;Ronel Rivers&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Every flight begins with a fall.&quot;,&quot;tagList&quot;:[&quot;Long&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:20:06.628Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:20:06.628Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.article.title == articleRequestbody.article.title</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">2.300</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># This section is commented out since we are calling the CreateToken.feature which already has the url defined,</div>
+          <div class="comment indention"># if we leave it here it will override the url defined in the CreateToken.feature and the test will fail since</div>
+          <div class="comment indention"># the url is different for the login and for the articles.</div>
+          <div class="comment indention"># Replaced by last line below of this section</div>
+          <div class="comment indention"># Given url apiURL</div>
+          <div class="comment indention"># Given path 'users/login'</div>
+          <div class="comment indention"># And request {&quot;user&quot;:{&quot;email&quot;:&quot;jesus.quispe@globant.com&quot;,&quot;password&quot;:&quot;Gabylu212208.&quot;}}</div>
+          <div class="comment indention"># When method POST</div>
+          <div class="comment indention"># Then status 200</div>
+          <div class="comment indention"># * def token = response.user.token</div>
+          <div class="comment indention"># Changing function call by callonce, to read only one the create Token feature and reuse the token for all scenarios.</div>
+          <div class="comment indention"># Add parameters to be executed by anyone.</div>
+          <div class="comment indention"># This line is deprecated since we implemented gathering token on karate-config.js</div>
+          <div class="comment indention"># * def tokenResponse  = callonce read('classpath:helpers/CreateToken.feature')</div>
+          <div class="comment indention"># Replaced by configurations in karate-config.js : {&quot;email&quot;:&quot;jesus.quispe@globant.com&quot;,&quot;password&quot;:&quot;Gabylu212208.&quot;}</div>
+          <div class="comment indention"># This line is deprecated since we implemented gathering tokenon karate-config.js</div>
+          <div class="comment indention"># * def token = tokenResponse.authToken</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiURL</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>17:20:07.412 &lt;&lt; lock released, cached callSingle: classpath:helpers/CreateToken.feature
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">helpers/CreateToken.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'https://conduit-api.bondaracademy.com/api/'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>17:20:05.446 karate.env system property was: null 
+17:20:05.468 &gt;&gt; lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'users/login'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># And request {&quot;user&quot;:{&quot;email&quot;:&quot;jesus.quispe@globant.com&quot;,&quot;password&quot;:&quot;Gabylu212208.&quot;}}</div>
+          <div class="comment indention"># Changing to receive parameters</div>
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {&quot;user&quot;:{&quot;email&quot;:&quot;#(userEmail)&quot;,&quot;password&quot;:&quot;#(userPassword)&quot;}}</span>
+
+  <span class="lead-duration duration">0.123</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Check the update on the line above with karate-config.js configuration And request {&quot;user&quot;:{&quot;email&quot;:&quot;#(email)&quot;,&quot;password&quot;:&quot;#(password)&quot;}}</div>
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">1.718</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>17:20:06.290 request:
+1 &gt; POST https://conduit-api.bondaracademy.com/api/users/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 72
+1 &gt; Host: conduit-api.bondaracademy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;jesus.quispe@globant.com&quot;,&quot;password&quot;:&quot;Gabylu212208.&quot;}}
+
+17:20:07.400 response time in milliseconds: 1106
+1 &lt; 200
+1 &lt; x-powered-by: Express
+1 &lt; vary: Origin
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; etag: W/&quot;142-ZjzyqzlK9Wom4mtKbOI24gkZ1+0&quot;
+1 &lt; x-cloud-trace-context: 3c62ea4262aa50c0c260f945bf8d96ae;o=1
+1 &lt; date: Wed, 08 Apr 2026 22:20:05 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 322
+{&quot;user&quot;:{&quot;email&quot;:&quot;jesus.quispe@globant.com&quot;,&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTY4NjgwNSwiZXhwIjoxNzgwODcwODA1fQ.JSJ-nqAhFuKokw6n-xi6-KeMWuGL6BZZ0DsPg2x_Ylo&quot;}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def authToken = response.user.token</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def articleRequestbody = read('classpath:resources/newArticleRequest.json')</span>
+
+  <span class="lead-duration duration">0.017</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestbody.article.title = dataGenerator.getRandomArticleValues().title</span>
+
+  <span class="lead-duration duration">0.260</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestbody.article.description = dataGenerator.getRandomArticleValues().description</span>
+
+  <span class="lead-duration duration">0.055</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestbody.article.body = dataGenerator.getRandomArticleValues().body</span>
+
+  <span class="lead-duration duration">0.048</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestbody.article.tagList = dataGenerator.getRandomArticleValues().tagList</span>
+
+  <span class="lead-duration duration">0.048</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.727</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create and delete new article</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-12" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-13" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># This line is deprecated since we implemented gathering token on karate-config.js</div>
+          <div class="comment indention"># And header Authorization = 'Token ' + token</div>
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;article&quot;: {&quot;title&quot;: &quot;New title 2&quot;, &quot;description&quot;: &quot;About new title 2&quot;, &quot;body&quot;: &quot;Body title New Title 2&quot;, &quot;tagList&quot;: [&quot;tag new title 2&quot;]}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.605</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>17:20:07.870 request:
+1 &gt; POST https://conduit-api.bondaracademy.com/api/articles
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTY4NjgwNSwiZXhwIjoxNzgwODcwODA1fQ.JSJ-nqAhFuKokw6n-xi6-KeMWuGL6BZZ0DsPg2x_Ylo
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 131
+1 &gt; Host: conduit-api.bondaracademy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;article&quot;:{&quot;title&quot;:&quot;New title 2&quot;,&quot;description&quot;:&quot;About new title 2&quot;,&quot;body&quot;:&quot;Body title New Title 2&quot;,&quot;tagList&quot;:[&quot;tag new title 2&quot;]}}
+
+17:20:08.472 response time in milliseconds: 600
+1 &lt; 201
+1 &lt; x-powered-by: Express
+1 &lt; vary: Origin
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; etag: W/&quot;19d-rwdyZS9nqaURX8x25NwU7WEDwJs&quot;
+1 &lt; x-cloud-trace-context: 1ad6d1e9ca546caaf2cd2fa6ef68b08d
+1 &lt; date: Wed, 08 Apr 2026 22:20:06 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 413
+{&quot;article&quot;:{&quot;slug&quot;:&quot;New-title-2-51031&quot;,&quot;title&quot;:&quot;New title 2&quot;,&quot;description&quot;:&quot;About new title 2&quot;,&quot;body&quot;:&quot;Body title New Title 2&quot;,&quot;tagList&quot;:[&quot;tag new title 2&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:20:06.653Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:20:06.653Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.article.title == &quot;New title 2&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def articleslug = response.article.slug</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def articletitle = response.article.title</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles/' + articleslug</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># This line is deprecated since we implemented gathering token on karate-config.js</div>
+          <div class="comment indention"># And header Authorization = 'Token ' + token</div>
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method DELETE</span>
+
+  <span class="lead-duration duration">0.561</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>17:20:08.479 request:
+2 &gt; DELETE https://conduit-api.bondaracademy.com/api/articles/New-title-2-51031
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTY4NjgwNSwiZXhwIjoxNzgwODcwODA1fQ.JSJ-nqAhFuKokw6n-xi6-KeMWuGL6BZZ0DsPg2x_Ylo
+2 &gt; Host: conduit-api.bondaracademy.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+17:20:09.037 response time in milliseconds: 556
+2 &lt; 204
+2 &lt; x-powered-by: Express
+2 &lt; vary: Origin
+2 &lt; etag: W/&quot;a-bAsFyilMr4Ra1hIU5PyoyFRunpI&quot;
+2 &lt; x-cloud-trace-context: e6af2358b595e6f3d10a7e6280307081
+2 &lt; date: Wed, 08 Apr 2026 22:20:07 GMT
+2 &lt; content-type: text/html
+2 &lt; server: Google Frontend
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 204</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params {limit: 10, offset: 0}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.554</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>17:20:09.041 request:
+3 &gt; GET https://conduit-api.bondaracademy.com/api/articles?offset=0&amp;limit=10
+3 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTY4NjgwNSwiZXhwIjoxNzgwODcwODA1fQ.JSJ-nqAhFuKokw6n-xi6-KeMWuGL6BZZ0DsPg2x_Ylo
+3 &gt; Host: conduit-api.bondaracademy.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+17:20:09.594 response time in milliseconds: 553
+3 &lt; 200
+3 &lt; x-powered-by: Express
+3 &lt; vary: Origin
+3 &lt; content-type: application/json; charset=utf-8
+3 &lt; etag: W/&quot;1082-QT4ZbdjMtN4iet91CQH0/tOTLf8&quot;
+3 &lt; x-cloud-trace-context: 3a7dec1f0fa696341999272e7f78cc69
+3 &lt; date: Wed, 08 Apr 2026 22:20:07 GMT
+3 &lt; server: Google Frontend
+3 &lt; Content-Length: 4226
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Ronel-Rivers-51031&quot;,&quot;title&quot;:&quot;Ronel Rivers&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Every flight begins with a fall.&quot;,&quot;tagList&quot;:[&quot;Long&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:20:06.628Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:20:06.628Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Quaro-51031&quot;,&quot;title&quot;:&quot;Quaro&quot;,&quot;description&quot;:&quot;Myr&quot;,&quot;body&quot;:&quot;Things are not always as they seemed, much that may seem evil can be good.&quot;,&quot;tagList&quot;:[&quot;Ball&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:16:47.241Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:16:47.241Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Pollitor-51031&quot;,&quot;title&quot;:&quot;Pollitor&quot;,&quot;description&quot;:&quot;Lys&quot;,&quot;body&quot;:&quot;A lion doesn't concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[&quot;Myre of Harlaw&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:09:47.732Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:09:47.732Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Harbert-Paege-51031&quot;,&quot;title&quot;:&quot;Harbert Paege&quot;,&quot;description&quot;:&quot;Bayasabhad&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[&quot;Tarth of Evenfall Hall&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:04:36.033Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:04:36.033Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aeron-Greyjoy-51031&quot;,&quot;title&quot;:&quot;Aeron Greyjoy&quot;,&quot;description&quot;:&quot;Chroyane&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.&quot;,&quot;tagList&quot;:[&quot;Pommingham&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:58:45.073Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:58:45.073Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Cotter-Pyke-51031&quot;,&quot;title&quot;:&quot;Cotter Pyke&quot;,&quot;description&quot;:&quot;Old Ghis&quot;,&quot;body&quot;:&quot;Summer will end soon enough, and childhood as well.&quot;,&quot;tagList&quot;:[&quot;Wendwater&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:56:46.393Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:56:46.393Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Catelyn-Stark-51031&quot;,&quot;title&quot;:&quot;Catelyn Stark&quot;,&quot;description&quot;:&quot;Meereen&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[&quot;Meadows of Grassy Vale&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:54:59.254Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:54:59.254Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Haggon-51031&quot;,&quot;title&quot;:&quot;Haggon&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;Winter is coming.&quot;,&quot;tagList&quot;:[&quot;Connington of Griffin's Roost&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:47:28.696Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:47:28.696Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Sargon-Botley-51031&quot;,&quot;title&quot;:&quot;Sargon Botley&quot;,&quot;description&quot;:&quot;Ar Noy&quot;,&quot;body&quot;:&quot;When the snows fall and the white winds blow, the lone wolf dies but the pack survives.&quot;,&quot;tagList&quot;:[&quot;Peake of Starpike&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:33:03.530Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:33:03.530Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Ghost-of-High-Heart-51031&quot;,&quot;title&quot;:&quot;Ghost of High Heart&quot;,&quot;description&quot;:&quot;King's Landing&quot;,&quot;body&quot;:&quot;The things I do for love.&quot;,&quot;tagList&quot;:[&quot;Fowler of Skyreach&quot;],&quot;createdAt&quot;:&quot;2026-04-07T06:48:04.236Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T06:48:04.236Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:21}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.articles[*].title !contains articletitle</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

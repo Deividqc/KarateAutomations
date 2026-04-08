@@ -38,7 +38,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-pass" class="bg-success">2</div>
       <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
@@ -49,11 +49,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-04-06 05:34:20 PM</div>
+    <div>2026-04-08 05:20:10 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>Get all tags ( asserts con contenido del response)</span></a>
+          </div>
           <div class="nav-item passed">
             <a href="#[2:22]"><span>[2:22]</span> <span>Get 10 articles (Assert con cantidad de artículos)</span></a>
           </div>
@@ -69,10 +72,337 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <span class="feature-description">//Implementing Backgroung as the url is the same for all scenarios</span>
         </div>
         <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">Get all tags ( asserts con contenido del response)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>740</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:9]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">17:20:05.446 karate.env system property was: null 
+17:20:07.413 this thread waited 1945 milliseconds for callSingle lock: classpath:helpers/CreateToken.feature
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;tags&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">725</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">17:20:07.426 request:
+1 &gt; GET https://conduit-api.bondaracademy.com/api/tags
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTY4NjgwNSwiZXhwIjoxNzgwODcwODA1fQ.JSJ-nqAhFuKokw6n-xi6-KeMWuGL6BZZ0DsPg2x_Ylo
+1 &gt; Host: conduit-api.bondaracademy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+17:20:08.147 response time in milliseconds: 718
+1 &lt; 200
+1 &lt; x-powered-by: Express
+1 &lt; vary: Origin
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; etag: W/&quot;72-3CZhKd/adSoTyZ+Ke5I6gPBQ0dM&quot;
+1 &lt; x-cloud-trace-context: 54d2ce53ccf55138a0bedb6772f9648d
+1 &lt; date: Wed, 08 Apr 2026 22:20:06 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 114
+{&quot;tags&quot;:[&quot;Test&quot;,&quot;Blog&quot;,&quot;Git&quot;,&quot;YouTube&quot;,&quot;Slack&quot;,&quot;Bondar Academy&quot;,&quot;GitHub&quot;,&quot;Zoom&quot;,&quot;Value-Focused&quot;,&quot;Start for Free&quot;]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.tags contains [&#39;Test&#39;,&#39;Blog&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.tags !contains &#39;truck&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.tags contains any [&#39;Test&#39;,&#39;GEAI&#39;, &quot;Nvidia&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.tags !contains &#39;Selenium&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.tags == &quot;#array&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response.tags == &quot;#string&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
           <div class="scenario-heading" id="[2:22]">
             <div class="heading-container">
               <div class="scenario-tags">
-                <a class="badge badge-primary" href="karate-tags.html">debug</a>
+                
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[2:22]</span>
@@ -81,7 +411,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>682</span>
+              <span>ms:</span>&nbsp;<span>781</span>
             </div>
           </div>
           <div class="step-row">
@@ -104,72 +434,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url apiURL</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.6">17:34:19.802 &lt;&lt; lock released, cached callSingle: classpath:helpers/CreateToken.feature
-</div>   
-
-  <div>
-        
-    <div class="step-row">
-      <div class="step-container" id="0.6.0.call">
-        <div class="step-ref bg-step">&gt;&gt;</div>
-        <div class="step-indent"></div>
-        <div class="step-cell passed">helpers.CreateToken</div>
-      </div>
-      <div class="time-cell passed">1389</div>
-    </div>
-    <div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call">
-    <div class="step-container" id="0.6.0.call.0.4">
-      <div class="step-ref bg-step">4</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url &#39;https://conduit-api.bondaracademy.com/api/&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.6.0.call.0.4">17:34:18.361 karate.env system property was: null 
-17:34:18.365 &gt;&gt; lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call">
-    <div class="step-container" id="0.6.0.call.0.5">
-      <div class="step-ref bg-step">5</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;users/login&#39;</span>
-      </div>
-    </div>
     <div class="time-cell passed">1</div>
   </div>
 
@@ -179,171 +443,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  <div class="step-row" data-parent="0.6.0.call">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell comment"># And request {&quot;user&quot;:{&quot;email&quot;:&quot;jesus.quispe@globant.com&quot;,&quot;password&quot;:&quot;Gabylu212208.&quot;}}</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row" data-parent="0.6.0.call">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell comment"># Changing to receive parameters</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row" data-parent="0.6.0.call">
-    <div class="step-container" id="0.6.0.call.0.8">
-      <div class="step-ref bg-step">8</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request {&quot;user&quot;:{&quot;email&quot;:&quot;#(userEmail)&quot;,&quot;password&quot;:&quot;#(userPassword)&quot;}}</span>
-      </div>
-    </div>
-    <div class="time-cell passed">45</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  <div class="step-row" data-parent="0.6.0.call">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell comment"># Check the update on the line above with karate-config.js configuration And request {&quot;user&quot;:{&quot;email&quot;:&quot;#(email)&quot;,&quot;password&quot;:&quot;#(password)&quot;}}</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row" data-parent="0.6.0.call">
-    <div class="step-container" id="0.6.0.call.0.10">
-      <div class="step-ref bg-step">10</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1333</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.6.0.call.0.10">17:34:18.715 request:
-1 &gt; POST https://conduit-api.bondaracademy.com/api/users/login
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 72
-1 &gt; Host: conduit-api.bondaracademy.com
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;user&quot;:{&quot;email&quot;:&quot;jesus.quispe@globant.com&quot;,&quot;password&quot;:&quot;Gabylu212208.&quot;}}
-
-17:34:19.792 response time in milliseconds: 1074
-1 &lt; 200
-1 &lt; x-powered-by: Express
-1 &lt; vary: Origin
-1 &lt; content-type: application/json; charset=utf-8
-1 &lt; etag: W/&quot;142-39ZXfFfETBoKRWxNhTdU2ybC2KM&quot;
-1 &lt; x-cloud-trace-context: c17786ab03d222af976e601ea1fcf1e2;o=1
-1 &lt; date: Mon, 06 Apr 2026 22:34:19 GMT
-1 &lt; server: Google Frontend
-1 &lt; Content-Length: 322
-{&quot;user&quot;:{&quot;email&quot;:&quot;jesus.quispe@globant.com&quot;,&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTUxNDg1OSwiZXhwIjoxNzgwNjk4ODU5fQ.00zKZzInQtQOhV-mif7FlCZjt7e948-RLs_371EMoQM&quot;}}
-
+  <div class="preformatted" data-parent="0.6">17:20:05.446 karate.env system property was: null 
+17:20:07.413 this thread waited 1945 milliseconds for callSingle lock: classpath:helpers/CreateToken.feature
 </div>   
 
   
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call">
-    <div class="step-container" id="0.6.0.call.0.11">
-      <div class="step-ref bg-step">11</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">4</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call">
-    <div class="step-container" id="0.6.0.call.0.12">
-      <div class="step-ref bg-step">12</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def authToken = response.user.token</span>
-      </div>
-    </div>
-    <div class="time-cell passed">4</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-    </div>    
-  </div>
 
 </div>
 </div>
@@ -360,7 +464,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def timeValidator = read(&#39;classpath:helpers/timeValidator.js&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">14</div>
+    <div class="time-cell passed">42</div>
   </div>
 
    
@@ -388,7 +492,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>params {limit: 10, offset: 0}</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -416,7 +520,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -444,7 +548,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">591</div>
+    <div class="time-cell passed">634</div>
   </div>
 
    
@@ -453,26 +557,26 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.27">17:34:19.826 request:
+  <div class="preformatted" data-parent="0.27">17:20:07.470 request:
 1 &gt; GET https://conduit-api.bondaracademy.com/api/articles?offset=0&amp;limit=10
-1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTUxNDg1OSwiZXhwIjoxNzgwNjk4ODU5fQ.00zKZzInQtQOhV-mif7FlCZjt7e948-RLs_371EMoQM
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTY4NjgwNSwiZXhwIjoxNzgwODcwODA1fQ.JSJ-nqAhFuKokw6n-xi6-KeMWuGL6BZZ0DsPg2x_Ylo
 1 &gt; Host: conduit-api.bondaracademy.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-17:34:20.412 response time in milliseconds: 582
+17:20:08.099 response time in milliseconds: 626
 1 &lt; 200
 1 &lt; x-powered-by: Express
 1 &lt; vary: Origin
 1 &lt; content-type: application/json; charset=utf-8
-1 &lt; etag: W/&quot;3c79-l9Pm10ihfppDGqjNypVMsBsue+A&quot;
-1 &lt; x-cloud-trace-context: 587a163578f246726aa0ce120bca3fff
-1 &lt; date: Mon, 06 Apr 2026 22:34:20 GMT
+1 &lt; etag: W/&quot;116e-7zqVMBPX1U/Ej4+kFREHQhv4FfQ&quot;
+1 &lt; x-cloud-trace-context: 49f2f0b86601871056fbf5a0fc36c070
+1 &lt; date: Wed, 08 Apr 2026 22:20:06 GMT
 1 &lt; server: Google Frontend
-1 &lt; Content-Length: 15481
-{&quot;articles&quot;:[{&quot;slug&quot;:&quot;New-title-1-51031&quot;,&quot;title&quot;:&quot;New title 1&quot;,&quot;description&quot;:&quot;About new title 1&quot;,&quot;body&quot;:&quot;Body title New Title 1&quot;,&quot;tagList&quot;:[&quot;tag new title 1&quot;],&quot;createdAt&quot;:&quot;2026-04-06T17:57:54.682Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-06T17:57:54.682Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Reviewing-Jenkins-51031&quot;,&quot;title&quot;:&quot;Reviewing Jenkins&quot;,&quot;description&quot;:&quot;is about Jenkins learning&quot;,&quot;body&quot;:&quot;We should review CI/CD for testers Course for being useful for a next project, and within Git actions may incorporate to our skills, as part of a Hybrid Quality Control member  (manual, automation and Devop engineer)&quot;,&quot;tagList&quot;:[&quot;Jenkins, DEVOS, Git Actions&quot;],&quot;createdAt&quot;:&quot;2026-03-31T20:33:08.125Z&quot;,&quot;updatedAt&quot;:&quot;2026-03-31T20:33:08.125Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Discover-Bondar-Academy:-Your-Gateway-to-Efficient-Learning-1&quot;,&quot;title&quot;:&quot;Discover Bondar Academy: Your Gateway to Efficient Learning&quot;,&quot;description&quot;:&quot;Discover Bondar Academy&#39;s unique place in the educational landscape, where value-focused and efficient learning approaches converge. Our goal is to rapidly enhance your professional technical skills, boosting your market competitiveness and paving the way for higher-paying job opportunities. The speed of your progress is in your hands – you set the pace, and we provide the solutions and support to help you achieve your desired outcomes.&quot;,&quot;body&quot;:&quot;Bondar Academy is a leading platform for efficient education, designed to boost your technical skills and advance your career in Quality Assurance (QA). Our program features a balanced mix of pre-recorded lectures and live sessions, allowing each student to study at their own pace and at a time that suits them. \n\nOur instructors are readily available on our Slack Workspace for support. Whether it&#39;s a quick question or a more complex issue requiring a Zoom call or Slack Huddle for screen sharing and live discussion, we&#39;re here to assist. Additionally, each class comes with a comprehensive question bank for self-assessment. Following each lecture, you have the opportunity to validate your understanding and readiness to progress to the next topic. You set the pace, and we provide the solutions to ensure you achieve your desired outcomes.\n\nSignUp today: https://www.bondaracademy.com&quot;,&quot;tagList&quot;:[&quot;qa career&quot;,&quot;Bondar Academy&quot;,&quot;QA Skills&quot;,&quot;Value-Focused&quot;],&quot;createdAt&quot;:&quot;2024-01-27T21:52:32.682Z&quot;,&quot;updatedAt&quot;:&quot;2024-01-27T21:52:32.682Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:1883,&quot;author&quot;:{&quot;username&quot;:&quot;Artem Bondar&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://storage.googleapis.com/bondar-academy-visuals/Android.png&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;The-value-of-pre-recorded-video-classes.-The-most-efficient-approach-to-tranfer-the-knowledge-1&quot;,&quot;title&quot;:&quot;The value of pre-recorded video classes. The most efficient approach to tranfer the knowledge&quot;,&quot;description&quot;:&quot;As educational practices evolve, video tutorials have emerged as the most efficient method for imparting theoretical knowledge. At Bondar Academy, we prioritize expertly structured and crafted video tutorials, ensuring you learn quickly and effectively and advance your skills.&quot;,&quot;body&quot;:&quot;At Bondar Academy, we prioritize the value of your time and the efficiency of your education, distinguishing our approach from traditional colleges and live boot camps. Forget long, tedious live lectures on a fixed schedule. With us, you learn at your convenience and pace through optimized, structured video lectures. \n\nWe understand your goal is rapid knowledge acquisition. Our pre-recorded and well-organized lectures are designed precisely for this, ensuring no slowdowns from group dynamics or unrelated instructor anecdotes. \n\nDive straight into the subject matter, learn efficiently, and if questions arise, our immediate support on the Slack Workspace is there to streamline your learning process and swiftly remove any roadblocks.&quot;,&quot;tagList&quot;:[&quot;Bondar Academy&quot;,&quot;Video Lectures&quot;,&quot;Tutorials&quot;],&quot;createdAt&quot;:&quot;2024-01-27T21:50:38.825Z&quot;,&quot;updatedAt&quot;:&quot;2024-01-27T21:50:38.825Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:461,&quot;author&quot;:{&quot;username&quot;:&quot;Artem Bondar&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://storage.googleapis.com/bondar-academy-visuals/Android.png&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Mastering-Knowledge-with-Self-Assessments:-Identifying-and-Bridging-Learning-Gaps-in-Education-1&quot;,&quot;title&quot;:&quot;Mastering Knowledge with Self-Assessments: Identifying and Bridging Learning Gaps in Education&quot;,&quot;description&quot;:&quot;Self-assessment is an essential tool for gauging your understanding of lecture material. It answers critical questions: Have you grasped everything correctly? Is there anything you&#39;ve missed? Are you prepared for the next lesson? These assessments ensure that you build a solid foundation of knowledge, confidently and efficiently paving the way for swift progress and effective learning outcomes.&quot;,&quot;body&quot;:&quot;Traditional educational institutions, such as colleges and universities, commonly use tests and assessments to measure knowledge. This approach is effective for gauging student performance, but it&#39;s not without drawbacks. In these settings, assessments after every lecture aren&#39;t feasible due to the time required for teachers to evaluate them. This often leads to students having a false sense of understanding, believing they&#39;ve comprehended all aspects of a lecture when, in reality, small but crucial details might be missed. These &#39;knowledge gaps&#39; can accumulate, making more complex topics difficult to grasp later on.\n\nAt Bondar Academy, we address this challenge by implementing self-assessments after every lecture. These are designed to cover key questions that ensure a thorough understanding of the material, essential for comfort and success in future lectures. The number of questions varies, ranging from 3-4 to 15-20, depending on the lecture&#39;s significance and the volume of critical information. With these self-assessments, students receive immediate feedback, helping them determine if they&#39;ve fully understood the lecture or if they need to revisit certain parts or seek assistance from our instructors in the Slack Workspace.&quot;,&quot;tagList&quot;:[&quot;Self-Assessment&quot;,&quot;Test&quot;,&quot;Exam&quot;],&quot;createdAt&quot;:&quot;2024-01-27T21:48:36.340Z&quot;,&quot;updatedAt&quot;:&quot;2024-01-27T21:48:36.340Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:226,&quot;author&quot;:{&quot;username&quot;:&quot;Artem Bondar&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://storage.googleapis.com/bondar-academy-visuals/Android.png&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Practical-Implementation-of-Skills:-Homework-Assignments-with-Instructor-Supervision-1&quot;,&quot;title&quot;:&quot;Practical Implementation of Skills: Homework Assignments with Instructor Supervision&quot;,&quot;description&quot;:&quot;Knowledge or skills not reinforced through practical exercises can quickly fade, often faster than anticipated. Homework, particularly in tasks like writing your own code, is crucial for honing these skills and cementing your understanding. At Bondar Academy, we ensure this vital step by assigning homework, rigorously evaluating the outcomes, and providing valuable feedback to guide your learning journey.&quot;,&quot;body&quot;:&quot;Homework assignments are a fundamental component of the educational methodology at Bondar Academy, especially in technical education where learning a new programming language or framework is involved. The key to mastering these skills lies in writing code; the more you write, the better you become. However, merely replicating code seen in lectures leads to minimal learning. Often, this approach leaves students unclear about why their code works the way it does, as they focus on copying rather than understanding.\n\nA homework assignment at Bondar Academy starts with a blank page, challenging students to apply all their knowledge to write the first line of code. This process is more demanding than it appears. As you write each line, understanding and reasoning grow, making your code meaningful and comprehensible. You learn to write code that makes sense to you, enhancing your understanding.\n\nIn completing these assignments, you engage the &#39;thinking&#39; part of your brain, transforming theoretical knowledge into practical skills. Recognizing the crucial role of homework in learning, our instructors at Bondar Academy are always available to assist with any challenges. Just reach out on Slack, and you&#39;ll receive the guidance and support needed for successful completion. At Bondar Academy, we fully understand the importance of homework assignments for the best outcome, so our instructors are always here to assist if you have any difficulties with completing them. Just ask in Slack and you&#39;ll be guided and assisted.&quot;,&quot;tagList&quot;:[&quot;Homework&quot;,&quot;Assignments&quot;,&quot;Practice&quot;,&quot;Coding&quot;],&quot;createdAt&quot;:&quot;2024-01-27T21:46:09.512Z&quot;,&quot;updatedAt&quot;:&quot;2024-01-27T21:46:09.512Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:104,&quot;author&quot;:{&quot;username&quot;:&quot;Artem Bondar&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://storage.googleapis.com/bondar-academy-visuals/Android.png&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Embracing-Daily-Git-Routines:-Real-Code-Reviews-on-GitHub-for-Effective-Coding-Practice.-1&quot;,&quot;title&quot;:&quot;Embracing Daily Git Routines: Real Code Reviews on GitHub for Effective Coding Practice.&quot;,&quot;description&quot;:&quot;Learning to code is just one part of a larger skill set; effectively managing and organizing code is equally crucial. At Bondar Academy, we integrate Git and platforms like GitHub into the core learning cycle. With us, using Git becomes a regular routine, where organizing code in branches, storing it in remote repositories, and collaborating with others through strategies like branching, merging, pull requests, and code reviews are standard practice.&quot;,&quot;body&quot;:&quot;At Bondar Academy, mastering Git and GitHub is a fundamental step before delving into frameworks or programming languages. Effective code management, organization, and storage are crucial skills, and Git is the premier tool for this purpose. However, many learners initially find Git challenging due to its complexity and non-intuitive nature. To address this, our instructors have developed structured lectures on Git and GitHub, ensuring an efficient and thorough understanding of these essential tools. Git lessons are a mandatory prerequisite in every class. For a glimpse into our teaching approach, visit our YouTube channel: https://www.youtube.com/@BondarAcademy/playlists.\n\nIn our courses, all homework assignments are reviewed using GitHub pull requests, mirroring the workflow in real-world software development environments. Students submit their code to their working branch for review. Our instructors then provide feedback, suggesting modifications or adjustments for pull request approval. This iterative process is repeated throughout the course, establishing Git usage as a natural and routine part of your coding practice.&quot;,&quot;tagList&quot;:[&quot;YouTube&quot;,&quot;Git&quot;,&quot;GitHub&quot;],&quot;createdAt&quot;:&quot;2024-01-27T21:42:31.491Z&quot;,&quot;updatedAt&quot;:&quot;2024-01-27T21:42:31.491Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:103,&quot;author&quot;:{&quot;username&quot;:&quot;Artem Bondar&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://storage.googleapis.com/bondar-academy-visuals/Android.png&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Engaging-in-Live-Zoom-Sessions:-Interact-with-Instructors-and-Peers-Ask-Questions-in-Real-Time-1&quot;,&quot;title&quot;:&quot;Engaging in Live Zoom Sessions: Interact with Instructors and Peers, Ask Questions in Real-Time&quot;,&quot;description&quot;:&quot;In our increasingly online world, personal engagement remains a crucial element of effective learning. At Bondar Academy, we address this by hosting live Zoom sessions. These sessions provide a platform for live interaction between instructors and students, and among students themselves. Complementing our Slack channel, these live sessions offer an additional avenue for asking questions and engaging in meaningful discussions.&quot;,&quot;body&quot;:&quot;In our increasingly online world, personal engagement remains a crucial element of effective learning. \nAt Bondar Academy, we address this by hosting live Zoom sessions. These sessions provide a platform for live interaction between instructors and students and among students themselves. Complementing our Slack channel, these live sessions offer an additional avenue for asking questions and engaging in meaningful discussions.&quot;,&quot;tagList&quot;:[&quot;Zoom&quot;,&quot;Live Sessions&quot;],&quot;createdAt&quot;:&quot;2024-01-27T21:39:50.587Z&quot;,&quot;updatedAt&quot;:&quot;2024-01-27T21:39:50.587Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:75,&quot;author&quot;:{&quot;username&quot;:&quot;Artem Bondar&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://storage.googleapis.com/bondar-academy-visuals/Android.png&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Utilizing-Slack-for-Continuous-Engagement:-Connect-with-Instructors-Share-Insights-and-Collaborate-1&quot;,&quot;title&quot;:&quot;Utilizing Slack for Continuous Engagement: Connect with Instructors, Share Insights, and Collaborate&quot;,&quot;description&quot;:&quot;Slack stands out as a widely-used messaging and collaboration platform, celebrated for its convenience and versatility. It enables simultaneous participation in multiple conversations, supports comments and emoji reactions, and allows users to share screenshots, videos, and code snippets. Its functionality extends to making calls in huddle sessions. Given these robust features, Bondar Academy has chosen Slack as our primary communication platform, facilitating seamless interaction and collaboration.&quot;,&quot;body&quot;:&quot;As a new member of Bondar Academy, one of your initial steps should be registering for the Bondar Academy Slack Workspace. Upon registration at Bondar Academy, you&#39;ll receive a welcome email containing the URL to join. This Workspace serves as a central hub for communication with instructors and fellow students. Whether you have a question, need to share code, or want to upload screenshots, Slack makes it easy and efficient. Moreover, its compatibility with both desktop and mobile devices, by downloading and installing the app, ensures you can stay connected with your instructors and the community wherever you go.&quot;,&quot;tagList&quot;:[&quot;Slack&quot;,&quot;Community&quot;,&quot;Collaboration&quot;],&quot;createdAt&quot;:&quot;2024-01-27T21:38:27.992Z&quot;,&quot;updatedAt&quot;:&quot;2024-01-27T21:38:27.992Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:70,&quot;author&quot;:{&quot;username&quot;:&quot;Artem Bondar&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://storage.googleapis.com/bondar-academy-visuals/Android.png&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Stay-Ahead-with-Bondar-Academy:-Subscribe-to-Our-YouTube-channel-for-Latest-Tech-and-Education-Updates-1&quot;,&quot;title&quot;:&quot;Stay Ahead with Bondar Academy: Subscribe to Our YouTube channel for Latest Tech and Education Updates&quot;,&quot;description&quot;:&quot;Who doesn&#39;t appreciate high-quality free resources? YouTube serves as an ideal platform for sharing the latest news, updates, and a wealth of tips and tricks in test automation and technology. Keep abreast of these invaluable insights by subscribing to the @bondaracademy YouTube channel.&quot;,&quot;body&quot;:&quot;Who doesn&#39;t appreciate high-quality free resources? \n\nYouTube serves as an ideal platform for sharing the latest news, updates, and a wealth of tips and tricks in test automation and technology. \n\nKeep abreast of these invaluable insights by subscribing to our YouTube channel: https://www.youtube.com/@bondaracademy&quot;,&quot;tagList&quot;:[&quot;YouTube&quot;],&quot;createdAt&quot;:&quot;2024-01-27T21:36:32.360Z&quot;,&quot;updatedAt&quot;:&quot;2024-01-27T21:36:32.360Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:66,&quot;author&quot;:{&quot;username&quot;:&quot;Artem Bondar&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://storage.googleapis.com/bondar-academy-visuals/Android.png&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:12}
+1 &lt; Content-Length: 4462
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Quaro-51031&quot;,&quot;title&quot;:&quot;Quaro&quot;,&quot;description&quot;:&quot;Myr&quot;,&quot;body&quot;:&quot;Things are not always as they seemed, much that may seem evil can be good.&quot;,&quot;tagList&quot;:[&quot;Ball&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:16:47.241Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:16:47.241Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Pollitor-51031&quot;,&quot;title&quot;:&quot;Pollitor&quot;,&quot;description&quot;:&quot;Lys&quot;,&quot;body&quot;:&quot;A lion doesn&#39;t concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[&quot;Myre of Harlaw&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:09:47.732Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:09:47.732Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Harbert-Paege-51031&quot;,&quot;title&quot;:&quot;Harbert Paege&quot;,&quot;description&quot;:&quot;Bayasabhad&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[&quot;Tarth of Evenfall Hall&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:04:36.033Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:04:36.033Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aeron-Greyjoy-51031&quot;,&quot;title&quot;:&quot;Aeron Greyjoy&quot;,&quot;description&quot;:&quot;Chroyane&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I&#39;ll sleep more easily by night.&quot;,&quot;tagList&quot;:[&quot;Pommingham&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:58:45.073Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:58:45.073Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Cotter-Pyke-51031&quot;,&quot;title&quot;:&quot;Cotter Pyke&quot;,&quot;description&quot;:&quot;Old Ghis&quot;,&quot;body&quot;:&quot;Summer will end soon enough, and childhood as well.&quot;,&quot;tagList&quot;:[&quot;Wendwater&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:56:46.393Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:56:46.393Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Catelyn-Stark-51031&quot;,&quot;title&quot;:&quot;Catelyn Stark&quot;,&quot;description&quot;:&quot;Meereen&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[&quot;Meadows of Grassy Vale&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:54:59.254Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:54:59.254Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Haggon-51031&quot;,&quot;title&quot;:&quot;Haggon&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;Winter is coming.&quot;,&quot;tagList&quot;:[&quot;Connington of Griffin&#39;s Roost&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:47:28.696Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:47:28.696Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Sargon-Botley-51031&quot;,&quot;title&quot;:&quot;Sargon Botley&quot;,&quot;description&quot;:&quot;Ar Noy&quot;,&quot;body&quot;:&quot;When the snows fall and the white winds blow, the lone wolf dies but the pack survives.&quot;,&quot;tagList&quot;:[&quot;Peake of Starpike&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:33:03.530Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:33:03.530Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Ghost-of-High-Heart-51031&quot;,&quot;title&quot;:&quot;Ghost of High Heart&quot;,&quot;description&quot;:&quot;King&#39;s Landing&quot;,&quot;body&quot;:&quot;The things I do for love.&quot;,&quot;tagList&quot;:[&quot;Fowler of Skyreach&quot;],&quot;createdAt&quot;:&quot;2026-04-07T06:48:04.236Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T06:48:04.236Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Reviewing-Jenkins-51031&quot;,&quot;title&quot;:&quot;Reviewing Jenkins&quot;,&quot;description&quot;:&quot;is about Jenkins learning&quot;,&quot;body&quot;:&quot;We should review CI/CD for testers Course for being useful for a next project, and within Git actions may incorporate to our skills, as part of a Hybrid Quality Control member  (manual, automation and Devop engineer)&quot;,&quot;tagList&quot;:[&quot;Jenkins, DEVOS, Git Actions&quot;],&quot;createdAt&quot;:&quot;2026-03-31T20:33:08.125Z&quot;,&quot;updatedAt&quot;:&quot;2026-03-31T20:33:08.125Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:20}
 
 </div>   
 
@@ -521,7 +625,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.articles == &#39;#[10]&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">17</div>
+    <div class="time-cell passed">27</div>
   </div>
 
    
@@ -537,37 +641,16 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 </div>
 </div>
           <div><div>
-  
-
   
 
   <div class="step-row">
-    <div class="step-container" id="0.30">
-      <div class="step-ref passed">30</div>
+    <div class="step-container">
+      <div class="step-ref passed"></div>
       
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.articlesCount == 12</span>
-      </div>
+      <div class="step-cell comment">#And match response.articlesCount == 1</div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell comment"></div>            
   </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
 
   <div class="step-row">
     <div class="step-container" id="0.31">
@@ -577,146 +660,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.articlesCount != 25</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.32">
-      <div class="step-ref passed">32</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response == {&#39;articles&#39;: &quot;#array&quot;, &#39;articlesCount&#39;: 12}</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.33">
-      <div class="step-ref passed">33</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.articles[0].createdAt contains &#39;2026&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.34">
-      <div class="step-ref passed">34</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.articles[*].author.bio contains null</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.35">
-      <div class="step-ref passed">35</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response..bio contains null</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.36">
-      <div class="step-ref passed">36</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match each response..following == false</span>
-      </div>
-    </div>
     <div class="time-cell passed">3</div>
   </div>
 
@@ -735,106 +678,101 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <div><div>
   
 
-  
-
   <div class="step-row">
-    <div class="step-container" id="0.37">
-      <div class="step-ref passed">37</div>
+    <div class="step-container">
+      <div class="step-ref passed"></div>
       
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match each response..following == &#39;#boolean&#39;</span>
-      </div>
+      <div class="step-cell comment">#And match response == {&#39;articles&#39;: &quot;#array&quot;, &#39;articlesCount&#39;: 12}</div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell comment"></div>            
   </div>
 
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
   <div class="step-row">
-    <div class="step-container" id="0.38">
-      <div class="step-ref passed">38</div>
+    <div class="step-container">
+      <div class="step-ref passed"></div>
       
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match each response..favoritesCount == &#39;#number&#39;</span>
-      </div>
+      <div class="step-cell comment"># All the lines below are commented due we are validating the whole json response.</div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell comment"></div>            
   </div>
 
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
   <div class="step-row">
-    <div class="step-container" id="0.39">
-      <div class="step-ref passed">39</div>
+    <div class="step-container">
+      <div class="step-ref passed"></div>
       
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match each response..bio == &#39;##string&#39;</span>
-      </div>
+      <div class="step-cell comment"># And match response.articles[0].createdAt contains &#39;2026&#39;</div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell comment"></div>            
   </div>
 
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And match response.articles[*].author.bio contains null</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
 
   <div class="step-row">
-    <div class="step-container" id="0.40">
-      <div class="step-ref passed">40</div>
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And match response..bio contains null</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And match each response..following == false</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And match each response..following == &#39;#boolean&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And match each response..favoritesCount == &#39;#number&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># And match each response..bio == &#39;##string&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match each response.articles ==</span>
       </div>
     </div>
-    <div class="time-cell passed">38</div>
+    <div class="time-cell passed">71</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.40">{
+  <div class="preformatted" data-parent="0.41">{
     &quot;slug&quot;: &quot;#string&quot;,
     &quot;title&quot;: &quot;#string&quot;,
     &quot;description&quot;: &quot;#string&quot;,

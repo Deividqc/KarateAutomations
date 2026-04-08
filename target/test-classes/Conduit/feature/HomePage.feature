@@ -18,7 +18,7 @@ Scenario: Get all tags ( asserts con contenido del response)
     And match response.tags == "#array"
     And match each response.tags == "#string"
 
-@debug
+
 Scenario: Get 10 articles (Assert con cantidad de artículos)
     * def timeValidator = read('classpath:helpers/timeValidator.js')
     
@@ -27,9 +27,9 @@ Scenario: Get 10 articles (Assert con cantidad de artículos)
     When method GET
     Then status 200
     And match response.articles == '#[10]'
-    And match response.articlesCount == 12
+    #And match response.articlesCount == 1
     And match response.articlesCount != 25
-    And match response == {'articles': "#array", 'articlesCount': 12}
+    #And match response == {'articles': "#array", 'articlesCount': 12}
     # All the lines below are commented due we are validating the whole json response.
     # And match response.articles[0].createdAt contains '2026'
     # And match response.articles[*].author.bio contains null

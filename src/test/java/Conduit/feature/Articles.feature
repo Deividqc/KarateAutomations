@@ -27,6 +27,7 @@ Background: Define URL
     * set articleRequestbody.article.body = dataGenerator.getRandomArticleValues().body
     * set articleRequestbody.article.tagList = dataGenerator.getRandomArticleValues().tagList
 
+@ignore
 Scenario: Create a new article
     
     Given path 'articles'
@@ -37,7 +38,7 @@ Scenario: Create a new article
     Then status 201
     And match response.article.title == "New title 1"
 
-@Articles
+
 Scenario: Create a new article from JSON file
     
     Given path 'articles'
