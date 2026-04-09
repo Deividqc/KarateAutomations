@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"cea469b7-5eb5-49c7-912c-119fa4a1119c",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>Conduit.feature.HomePage</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-04-09 10:53:45 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[3:63]"><span>[3:63]</span> <span>Get Articles with conditional logic</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">Conduit/feature/HomePage.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">&#39;GET&#39; Tests for the home page</span>
+          <span class="feature-description">//Implementing Backgroung as the url is the same for all scenarios</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:63]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">debug</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:63]</span>
+                <span class="scenario-name">Get Articles with conditional logic</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1923</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:63]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:63]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">10:53:43.270 &lt;&lt; lock released, cached callSingle: classpath:helpers/CreateToken.feature
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.6.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helpers.CreateToken</div>
+      </div>
+      <div class="time-cell passed">1348</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://conduit-api.bondaracademy.com/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.4">10:53:41.862 karate.env system property was: null 
+10:53:41.867 &gt;&gt; lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># And request {&quot;user&quot;:{&quot;email&quot;:&quot;jesus.quispe@globant.com&quot;,&quot;password&quot;:&quot;Gabylu212208.&quot;}}</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># Changing to receive parameters</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;:{&quot;email&quot;:&quot;#(userEmail)&quot;,&quot;password&quot;:&quot;#(userPassword)&quot;}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">19</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># Check the update on the line above with karate-config.js configuration And request {&quot;user&quot;:{&quot;email&quot;:&quot;#(email)&quot;,&quot;password&quot;:&quot;#(password)&quot;}}</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1319</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.10">10:53:42.275 request:
+1 &gt; POST https://conduit-api.bondaracademy.com/api/users/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 72
+1 &gt; Host: conduit-api.bondaracademy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;jesus.quispe@globant.com&quot;,&quot;password&quot;:&quot;Gabylu212208.&quot;}}
+
+10:53:43.258 response time in milliseconds: 980
+1 &lt; 200
+1 &lt; x-powered-by: Express
+1 &lt; vary: Origin
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; etag: W/&quot;142-CPueXTuiWNm/Pp2i99jXIAO8y2g&quot;
+1 &lt; x-cloud-trace-context: 919ce68c818d27ead96c99b02867be67;o=1
+1 &lt; date: Thu, 09 Apr 2026 15:53:43 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 322
+{&quot;user&quot;:{&quot;email&quot;:&quot;jesus.quispe@globant.com&quot;,&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc1MDAyMywiZXhwIjoxNzgwOTM0MDIzfQ.Tkcq4V9DdDlFI7MfG8MeKMSudjw4kyyGrohxsp0QpN8&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = response.user.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>params {limit: 10, offset: 0}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">613</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.66">10:53:43.285 request:
+1 &gt; GET https://conduit-api.bondaracademy.com/api/articles?offset=0&amp;limit=10
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc1MDAyMywiZXhwIjoxNzgwOTM0MDIzfQ.Tkcq4V9DdDlFI7MfG8MeKMSudjw4kyyGrohxsp0QpN8
+1 &gt; Host: conduit-api.bondaracademy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:53:43.893 response time in milliseconds: 606
+1 &lt; 200
+1 &lt; x-powered-by: Express
+1 &lt; vary: Origin
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; etag: W/&quot;1082-QT4ZbdjMtN4iet91CQH0/tOTLf8&quot;
+1 &lt; x-cloud-trace-context: 24eb9998342c22934d745da8194d6e64
+1 &lt; date: Thu, 09 Apr 2026 15:53:43 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 4226
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Ronel-Rivers-51031&quot;,&quot;title&quot;:&quot;Ronel Rivers&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Every flight begins with a fall.&quot;,&quot;tagList&quot;:[&quot;Long&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:20:06.628Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:20:06.628Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Quaro-51031&quot;,&quot;title&quot;:&quot;Quaro&quot;,&quot;description&quot;:&quot;Myr&quot;,&quot;body&quot;:&quot;Things are not always as they seemed, much that may seem evil can be good.&quot;,&quot;tagList&quot;:[&quot;Ball&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:16:47.241Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:16:47.241Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Pollitor-51031&quot;,&quot;title&quot;:&quot;Pollitor&quot;,&quot;description&quot;:&quot;Lys&quot;,&quot;body&quot;:&quot;A lion doesn&#39;t concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[&quot;Myre of Harlaw&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:09:47.732Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:09:47.732Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Harbert-Paege-51031&quot;,&quot;title&quot;:&quot;Harbert Paege&quot;,&quot;description&quot;:&quot;Bayasabhad&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[&quot;Tarth of Evenfall Hall&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:04:36.033Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:04:36.033Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aeron-Greyjoy-51031&quot;,&quot;title&quot;:&quot;Aeron Greyjoy&quot;,&quot;description&quot;:&quot;Chroyane&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I&#39;ll sleep more easily by night.&quot;,&quot;tagList&quot;:[&quot;Pommingham&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:58:45.073Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:58:45.073Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Cotter-Pyke-51031&quot;,&quot;title&quot;:&quot;Cotter Pyke&quot;,&quot;description&quot;:&quot;Old Ghis&quot;,&quot;body&quot;:&quot;Summer will end soon enough, and childhood as well.&quot;,&quot;tagList&quot;:[&quot;Wendwater&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:56:46.393Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:56:46.393Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Catelyn-Stark-51031&quot;,&quot;title&quot;:&quot;Catelyn Stark&quot;,&quot;description&quot;:&quot;Meereen&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[&quot;Meadows of Grassy Vale&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:54:59.254Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:54:59.254Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Haggon-51031&quot;,&quot;title&quot;:&quot;Haggon&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;Winter is coming.&quot;,&quot;tagList&quot;:[&quot;Connington of Griffin&#39;s Roost&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:47:28.696Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:47:28.696Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Sargon-Botley-51031&quot;,&quot;title&quot;:&quot;Sargon Botley&quot;,&quot;description&quot;:&quot;Ar Noy&quot;,&quot;body&quot;:&quot;When the snows fall and the white winds blow, the lone wolf dies but the pack survives.&quot;,&quot;tagList&quot;:[&quot;Peake of Starpike&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:33:03.530Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:33:03.530Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Ghost-of-High-Heart-51031&quot;,&quot;title&quot;:&quot;Ghost of High Heart&quot;,&quot;description&quot;:&quot;King&#39;s Landing&quot;,&quot;body&quot;:&quot;The things I do for love.&quot;,&quot;tagList&quot;:[&quot;Fowler of Skyreach&quot;],&quot;createdAt&quot;:&quot;2026-04-07T06:48:04.236Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T06:48:04.236Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:21}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def favoritesCount = response.articles[0].favoritesCount</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def articlesObject = response.articles[0]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (favoritesCount == 0) karate.call(&#39;classpath:helpers/AddLikes.feature&#39; , articlesObject)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">664</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.71.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helpers.AddLikes</div>
+      </div>
+      <div class="time-cell passed">644</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.71.0.call">
+    <div class="step-container" id="0.71.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.71.0.call">
+    <div class="step-container" id="0.71.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;, slug , &#39;favorite&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.71.0.call">
+    <div class="step-container" id="0.71.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.71.0.call">
+    <div class="step-container" id="0.71.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">632</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.71.0.call.0.9">10:53:43.930 request:
+1 &gt; POST https://conduit-api.bondaracademy.com/api/articles/Ronel-Rivers-51031/favorite
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc1MDAyMywiZXhwIjoxNzgwOTM0MDIzfQ.Tkcq4V9DdDlFI7MfG8MeKMSudjw4kyyGrohxsp0QpN8
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 2
+1 &gt; Host: conduit-api.bondaracademy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{}
+
+10:53:44.560 response time in milliseconds: 628
+1 &lt; 200
+1 &lt; x-powered-by: Express
+1 &lt; vary: Origin
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; etag: W/&quot;19e-Au+j6xXJD/GIs/gehb81porzdZ8&quot;
+1 &lt; x-cloud-trace-context: b118a3e0013db310fdf3981875724e02
+1 &lt; date: Thu, 09 Apr 2026 15:53:44 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 414
+{&quot;article&quot;:{&quot;id&quot;:387659,&quot;slug&quot;:&quot;Ronel-Rivers-51031&quot;,&quot;title&quot;:&quot;Ronel Rivers&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Every flight begins with a fall.&quot;,&quot;createdAt&quot;:&quot;2026-04-08T22:20:06.628Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:20:06.628Z&quot;,&quot;favoritesCount&quot;:1,&quot;tagList&quot;:[&quot;Long&quot;],&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:true}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.71.0.call">
+    <div class="step-container" id="0.71.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.71.0.call">
+    <div class="step-container" id="0.71.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def likesCount = response.article.favoritesCount</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (favoritesCount &gt; 0) karate.log(&#39;The article has &#39; + favoritesCount + &#39; likes&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>params {limit: 10, offset: 0}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">614</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.76">10:53:44.571 request:
+2 &gt; GET https://conduit-api.bondaracademy.com/api/articles?offset=0&amp;limit=10
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc1MDAyMywiZXhwIjoxNzgwOTM0MDIzfQ.Tkcq4V9DdDlFI7MfG8MeKMSudjw4kyyGrohxsp0QpN8
+2 &gt; Host: conduit-api.bondaracademy.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+10:53:45.183 response time in milliseconds: 611
+2 &lt; 200
+2 &lt; x-powered-by: Express
+2 &lt; vary: Origin
+2 &lt; content-type: application/json; charset=utf-8
+2 &lt; etag: W/&quot;1081-PCruzU+w41ES63Pb2WuQzkOs7j0&quot;
+2 &lt; x-cloud-trace-context: 5b471d0f31684c118c198af4cd44d82c
+2 &lt; date: Thu, 09 Apr 2026 15:53:44 GMT
+2 &lt; server: Google Frontend
+2 &lt; Content-Length: 4225
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Ronel-Rivers-51031&quot;,&quot;title&quot;:&quot;Ronel Rivers&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Every flight begins with a fall.&quot;,&quot;tagList&quot;:[&quot;Long&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:20:06.628Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:20:06.628Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Quaro-51031&quot;,&quot;title&quot;:&quot;Quaro&quot;,&quot;description&quot;:&quot;Myr&quot;,&quot;body&quot;:&quot;Things are not always as they seemed, much that may seem evil can be good.&quot;,&quot;tagList&quot;:[&quot;Ball&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:16:47.241Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:16:47.241Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Pollitor-51031&quot;,&quot;title&quot;:&quot;Pollitor&quot;,&quot;description&quot;:&quot;Lys&quot;,&quot;body&quot;:&quot;A lion doesn&#39;t concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[&quot;Myre of Harlaw&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:09:47.732Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:09:47.732Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Harbert-Paege-51031&quot;,&quot;title&quot;:&quot;Harbert Paege&quot;,&quot;description&quot;:&quot;Bayasabhad&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[&quot;Tarth of Evenfall Hall&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:04:36.033Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:04:36.033Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aeron-Greyjoy-51031&quot;,&quot;title&quot;:&quot;Aeron Greyjoy&quot;,&quot;description&quot;:&quot;Chroyane&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I&#39;ll sleep more easily by night.&quot;,&quot;tagList&quot;:[&quot;Pommingham&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:58:45.073Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:58:45.073Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Cotter-Pyke-51031&quot;,&quot;title&quot;:&quot;Cotter Pyke&quot;,&quot;description&quot;:&quot;Old Ghis&quot;,&quot;body&quot;:&quot;Summer will end soon enough, and childhood as well.&quot;,&quot;tagList&quot;:[&quot;Wendwater&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:56:46.393Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:56:46.393Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Catelyn-Stark-51031&quot;,&quot;title&quot;:&quot;Catelyn Stark&quot;,&quot;description&quot;:&quot;Meereen&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[&quot;Meadows of Grassy Vale&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:54:59.254Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:54:59.254Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Haggon-51031&quot;,&quot;title&quot;:&quot;Haggon&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;Winter is coming.&quot;,&quot;tagList&quot;:[&quot;Connington of Griffin&#39;s Roost&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:47:28.696Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:47:28.696Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Sargon-Botley-51031&quot;,&quot;title&quot;:&quot;Sargon Botley&quot;,&quot;description&quot;:&quot;Ar Noy&quot;,&quot;body&quot;:&quot;When the snows fall and the white winds blow, the lone wolf dies but the pack survives.&quot;,&quot;tagList&quot;:[&quot;Peake of Starpike&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:33:03.530Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:33:03.530Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Ghost-of-High-Heart-51031&quot;,&quot;title&quot;:&quot;Ghost of High Heart&quot;,&quot;description&quot;:&quot;King&#39;s Landing&quot;,&quot;body&quot;:&quot;The things I do for love.&quot;,&quot;tagList&quot;:[&quot;Fowler of Skyreach&quot;],&quot;createdAt&quot;:&quot;2026-04-07T06:48:04.236Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T06:48:04.236Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:21}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.articles[0].favoritesCount == 1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

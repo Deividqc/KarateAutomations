@@ -58,3 +58,27 @@ Scenario: Get 10 articles (Assert con cantidad de artículos)
             }
         }
     """
+
+    @debug
+    Scenario: Get Articles with conditional logic
+        Given params {limit: 10, offset: 0}
+        Given path 'articles'
+        When method GET
+        Then status 200
+        * def favoritesCount = response.articles[0].favoritesCount
+        * def articlesObject = response.articles[0]
+
+        #* if (favoritesCount == 0) karate.call('classpath:helpers/AddLikes.feature' , articlesObject)
+        #* if (favoritesCount > 0) karate.log('The article has ' + favoritesCount + ' likes')
+
+        * def result = favoritesCount == 0 ? karate.call('classpath:helpers/AddLikes.feature' , articlesObject).likesCount : favoritesCount
+        * karate.log('The article has ' + favoritesCount + ' likes')
+
+        Given params {limit: 10, offset: 0}
+        Given path 'articles'
+        When method GET
+        Then status 200
+        #And match response.articles[0].favoritesCount == 1
+        And match response.articles[0].favoritesCount == result
+
+
