@@ -105,7 +105,7 @@ Scenario: Number to string
     * def json = {"bar": #(foo+'')}
     * match json == {"bar": '10'}
 
-@debug
+
 Scenario: string to number
     * def foo = '10'
     # * def json = {"bar": #(foo)}

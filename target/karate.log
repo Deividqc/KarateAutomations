@@ -1458,3 +1458,422 @@ classpath:Conduit/feature/HomePage.feature:112
 15:17:33.036 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (0 remaining) classpath:Conduit/feature/HomePage.feature
 15:17:33.072 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
 15:17:33.619 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.HomePage.json' contains 1 feature(s)
+12:58:34.201 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+12:58:36.379 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:58:36.385 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1776103116382
+12:58:38.024 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:58:38.031 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+12:58:38.600 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+12:58:39.891 [main] DEBUG com.intuit.karate - response time in milliseconds: 1282
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-ASHOz7nrUnV94YeY3IzwPOGYv2Y"
+1 < x-cloud-trace-context: 6c03161c5a56902ab96a9215a3eaa2f1;o=1
+1 < date: Mon, 13 Apr 2026 17:58:39 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NjEwMzExOSwiZXhwIjoxNzgxMjg3MTE5fQ.1spCL-9WXQ4chNtX92KawHcSuckJnHBxkUu0dlcT2bw"}}
+
+12:58:39.908 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+12:58:39.959 [main] ERROR com.intuit.karate - classpath:Conduit/feature/WorkWithDB.feature:8
+* eval dbHandler.addNewJobWithName
+js failed:
+>>>>
+01: dbHandler.addNewJobWithName
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "dbHandler" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:Conduit/feature/WorkWithDB.feature:8
+12:58:41.510 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 5 of 5 (0 remaining) classpath:Conduit/feature/WorkWithDB.feature
+12:58:41.515 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+12:58:42.249 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.WorkWithDB.json' contains 1 feature(s)
+12:59:25.650 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+12:59:28.436 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:59:28.445 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1776103168439
+12:59:30.953 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:59:30.964 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+12:59:31.597 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+12:59:32.677 [main] DEBUG com.intuit.karate - response time in milliseconds: 1074
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-yXleC47pQulu2sgEz/45hJlDb0c"
+1 < x-cloud-trace-context: e51a976bd60c762a92819b31b69cc9c7;o=1
+1 < date: Mon, 13 Apr 2026 17:59:32 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NjEwMzE3MiwiZXhwIjoxNzgxMjg3MTcyfQ.5E51RBstuIZ5t-SREAc8WUK4iJndUTXAc3_krPJUX58"}}
+
+12:59:32.693 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+12:59:32.730 [main] ERROR com.intuit.karate - classpath:Conduit/feature/WorkWithDB.feature:8
+* eval DbHandler.addNewJobWithName
+js failed:
+>>>>
+01: DbHandler.addNewJobWithName
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "DbHandler" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:Conduit/feature/WorkWithDB.feature:8
+12:59:34.154 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 5 of 5 (0 remaining) classpath:Conduit/feature/WorkWithDB.feature
+12:59:34.158 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+12:59:34.866 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.WorkWithDB.json' contains 1 feature(s)
+13:03:01.445 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+13:03:03.432 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:03:03.439 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1776103383435
+13:03:04.827 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:03:04.835 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+13:03:05.361 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+13:03:06.354 [main] DEBUG com.intuit.karate - response time in milliseconds: 988
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-EVE0p8PKrKGlMQDwaV8OTZkTQ3U"
+1 < x-cloud-trace-context: 5a2f4693d15a615a3c01db19b4f2077d;o=1
+1 < date: Mon, 13 Apr 2026 18:03:05 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NjEwMzM4NSwiZXhwIjoxNzgxMjg3Mzg1fQ.d6GuHk2re9WBNdbImqaLjvUUK8IsPQYetVGKvf8QtSI"}}
+
+13:03:06.370 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+13:03:07.493 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 5 (0 remaining) classpath:Conduit/feature/WorkWithDB.feature
+13:03:07.496 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+13:03:07.915 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.WorkWithDB.json' contains 1 feature(s)
+13:15:23.277 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+13:15:25.032 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:15:25.039 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1776104125035
+13:15:26.642 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:15:26.649 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+13:15:27.172 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+13:15:28.313 [main] DEBUG com.intuit.karate - response time in milliseconds: 1135
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-MlZd8wgptcijNaNCJ4geyWUScuk"
+1 < x-cloud-trace-context: f26b1200ddd780685194a5b84ea96d95
+1 < date: Mon, 13 Apr 2026 18:15:27 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NjEwNDEyNywiZXhwIjoxNzgxMjg4MTI3fQ.jmRjI13a8-JAsXydwLWlD0g_f0aouFm4e2iBR5sZrmI"}}
+
+13:15:28.327 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+13:15:29.375 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 5 (0 remaining) classpath:Conduit/feature/WorkWithDB.feature
+13:15:29.379 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+13:15:29.841 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.WorkWithDB.json' contains 1 feature(s)
+13:16:39.712 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+13:16:41.499 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:16:41.510 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1776104201502
+13:16:43.021 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:43.029 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+13:16:43.530 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+13:16:44.491 [main] DEBUG com.intuit.karate - response time in milliseconds: 957
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-86gmWFctmQHZlWTIXNSOlW91wD4"
+1 < x-cloud-trace-context: 350dd76ffd0f7eec6daeea7ad7b3dba6
+1 < date: Mon, 13 Apr 2026 18:16:44 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NjEwNDIwNCwiZXhwIjoxNzgxMjg4MjA0fQ.kfDWNNpKuogUYRsgxdea8Qj2fbz2I-cFNl0ql_zpvuM"}}
+
+13:16:44.505 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+13:16:45.577 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 5 (0 remaining) classpath:Conduit/feature/WorkWithDB.feature
+13:16:45.582 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+13:16:46.027 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.WorkWithDB.json' contains 1 feature(s)
+13:20:46.027 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+13:20:47.910 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:20:47.919 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1776104447913
+13:20:49.742 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:20:49.751 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+13:20:50.257 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+13:20:51.369 [main] DEBUG com.intuit.karate - response time in milliseconds: 1106
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-pCZ/A1qmWArOepVWuJjAzkOWOYQ"
+1 < x-cloud-trace-context: 40a8235538bf3d3fde3b15060ec55eb1;o=1
+1 < date: Mon, 13 Apr 2026 18:20:50 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NjEwNDQ1MCwiZXhwIjoxNzgxMjg4NDUwfQ.vyDsTFuIIeYbE16IQ32T0czlS6hkv5e7cdVnte-JJI8"}}
+
+13:20:51.380 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+13:20:52.391 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 5 (0 remaining) classpath:Conduit/feature/WorkWithDB.feature
+13:20:52.396 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+13:20:52.979 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.WorkWithDB.json' contains 1 feature(s)
+13:28:29.986 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+13:28:31.706 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:28:31.712 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1776104911708
+13:28:33.216 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:28:33.223 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+13:28:33.633 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+13:28:34.669 [main] DEBUG com.intuit.karate - response time in milliseconds: 1032
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-cQCAiT2MG9G+Mz/jOndiNHdlcz0"
+1 < x-cloud-trace-context: 058e0a163bbafeb6a31dd59437dc15e1;o=1
+1 < date: Mon, 13 Apr 2026 18:28:34 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NjEwNDkxNCwiZXhwIjoxNzgxMjg4OTE0fQ.VKoHri_dINbBD4nxeMtoR5bGTrongb7a-cQfggdbMqM"}}
+
+13:28:34.686 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+13:28:35.828 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 5 (0 remaining) classpath:Conduit/feature/WorkWithDB.feature
+13:28:35.833 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+13:28:36.379 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.WorkWithDB.json' contains 1 feature(s)
+13:31:09.627 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+13:31:11.403 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:31:11.410 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1776105071406
+13:31:13.248 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:31:13.255 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+13:31:13.720 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+13:31:14.740 [main] DEBUG com.intuit.karate - response time in milliseconds: 1013
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-uAgoRp/wm+uzdUMVoQvfGPVJ420"
+1 < x-cloud-trace-context: 0eadc44808dd7fbc533c654a80c6988f;o=1
+1 < date: Mon, 13 Apr 2026 18:31:14 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NjEwNTA3NCwiZXhwIjoxNzgxMjg5MDc0fQ.4T5JTBHHjXNzgh5n_7OWRviztOqPlCfs2efBZ31Mon4"}}
+
+13:31:14.759 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+13:31:14.906 [main] ERROR com.intuit.karate - classpath:Conduit/feature/WorkWithDB.feature:8
+* eval dbConfig.addNewJobWithId(53)
+js failed:
+>>>>
+01: dbConfig.addNewJobWithId(53)
+<<<<
+org.graalvm.polyglot.PolyglotException: Error en DB: Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Failed to parse the host:port pair 'localhost:3306;databaseName=myloandb;user=root;password=Gabylu212208.'.
+- helpers.DbHandler.addNewJobWithId(DbHandler.java:30)
+- <js>.:program(Unnamed:1)
+
+classpath:Conduit/feature/WorkWithDB.feature:8
+13:31:16.034 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 5 of 5 (0 remaining) classpath:Conduit/feature/WorkWithDB.feature
+13:31:16.038 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+13:31:16.546 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.WorkWithDB.json' contains 1 feature(s)
+13:34:43.866 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+13:34:45.644 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:34:45.651 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1776105285647
+13:34:47.110 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:34:47.121 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+13:34:47.553 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+13:34:48.538 [main] DEBUG com.intuit.karate - response time in milliseconds: 979
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-sFRoTa8QMnR3cH3Y4pA/mS0ZVmA"
+1 < x-cloud-trace-context: 8c79aca1b73e95afc8eaebd46a16d64f;o=1
+1 < date: Mon, 13 Apr 2026 18:34:48 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NjEwNTI4OCwiZXhwIjoxNzgxMjg5Mjg4fQ.z_B5ctifpdoDm2fG3ZvAMcjVSjtsMMyld8x1BlBXpDY"}}
+
+13:34:48.552 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+13:34:48.667 [main] ERROR com.intuit.karate - classpath:Conduit/feature/WorkWithDB.feature:8
+* eval dbConfig.addNewJobWithId(53)
+js failed:
+>>>>
+01: dbConfig.addNewJobWithId(53)
+<<<<
+org.graalvm.polyglot.PolyglotException: Error en DB: Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Failed to parse the host:port pair 'localhost:3306;databaseName=myloandb'.
+- helpers.DbHandler.addNewJobWithId(DbHandler.java:30)
+- <js>.:program(Unnamed:1)
+
+classpath:Conduit/feature/WorkWithDB.feature:8
+13:34:49.920 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 5 of 5 (0 remaining) classpath:Conduit/feature/WorkWithDB.feature
+13:34:49.924 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+13:34:50.529 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.WorkWithDB.json' contains 1 feature(s)
+13:37:11.756 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+13:37:13.470 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:37:13.480 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1776105433474
+13:37:15.011 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:37:15.020 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+13:37:15.530 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+13:37:16.487 [main] DEBUG com.intuit.karate - response time in milliseconds: 953
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-XAnux0PKgKXxvPnhAybbckKfYlo"
+1 < x-cloud-trace-context: fb70481a97429064a3f88ccc9f8db3ce
+1 < date: Mon, 13 Apr 2026 18:37:16 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NjEwNTQzNiwiZXhwIjoxNzgxMjg5NDM2fQ.EPQ09ci7Ik87CEhzTHUIG20ASVOw54jB-RqUfx61Cmk"}}
+
+13:37:16.500 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+13:37:17.749 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 5 (0 remaining) classpath:Conduit/feature/WorkWithDB.feature
+13:37:17.755 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+13:37:18.370 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.WorkWithDB.json' contains 1 feature(s)
+13:48:18.953 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+13:48:20.771 [main] ERROR c.intuit.karate.core.FeatureParser - not a valid feature file: Conduit/feature/WorkWithDB.feature - extraneous input '\r\n\r\n    Examples:' expecting {<EOF>, SCENARIO, SCENARIO_OUTLINE, TAGS, NEWLINE}
+13:49:46.000 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+13:49:47.920 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:49:47.927 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1776106187924
+13:49:49.504 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:49:49.513 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+13:49:50.062 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+13:49:51.098 [main] DEBUG com.intuit.karate - response time in milliseconds: 1030
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-He2ThFKNexC+QkXkeW193qnOqBM"
+1 < x-cloud-trace-context: b00e07773b135ae5af81ea991e4a026a;o=1
+1 < date: Mon, 13 Apr 2026 18:49:50 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NjEwNjE5MCwiZXhwIjoxNzgxMjkwMTkwfQ.jMhIt4dVfinyBEjVjPV77dYGVDsuMQe12YfoE_mQWsI"}}
+
+13:49:51.109 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+13:49:52.713 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 5 (0 remaining) classpath:Conduit/feature/WorkWithDB.feature
+13:49:52.717 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+13:49:53.253 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.WorkWithDB.json' contains 1 feature(s)
+13:53:48.114 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+13:53:50.990 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:53:51.001 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1776106430992
+13:53:53.772 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:53:53.787 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+13:53:54.585 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+13:53:55.813 [main] DEBUG com.intuit.karate - response time in milliseconds: 1208
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-VmKtrLX4QcLHtUzuGEWZRdHn6oM"
+1 < x-cloud-trace-context: e4b9f1533e3d029b21daf05393874078;o=1
+1 < date: Mon, 13 Apr 2026 18:53:55 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NjEwNjQzNSwiZXhwIjoxNzgxMjkwNDM1fQ.RrAo2MGDKoLCKWUf4UYlloo4sLCpZbwcUkY1p9Ou5lk"}}
+
+13:53:55.834 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+13:53:56.375 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:53:56.427 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:53:56.507 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:53:58.480 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 5 (0 remaining) classpath:Conduit/feature/WorkWithDB.feature
+13:53:58.485 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+13:53:59.286 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.WorkWithDB.json' contains 1 feature(s)
