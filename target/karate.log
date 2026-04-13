@@ -957,3 +957,504 @@ classpath:Conduit/feature/HomePage.feature:71
 11:56:01.225 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (0 remaining) classpath:Conduit/feature/HomePage.feature
 11:56:01.252 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
 11:56:01.685 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.HomePage.json' contains 1 feature(s)
+12:46:45.059 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+12:46:46.650 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:46:46.656 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1775756806652
+12:46:48.479 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:46:48.493 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+12:46:49.150 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+12:46:50.210 [main] DEBUG com.intuit.karate - response time in milliseconds: 1056
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-A5dMHuHRB1oKITnxcCheHPD7iBE"
+1 < x-cloud-trace-context: 434b520d4c19c7ef53794dbb5c340916
+1 < date: Thu, 09 Apr 2026 17:46:49 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc1NjgwOSwiZXhwIjoxNzgwOTQwODA5fQ.AKcLsOjTR_zIUoN6S86sR0HI2r2bjHA-P_AZhC2UtPo"}}
+
+12:46:50.220 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+12:46:50.234 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc1NjgwOSwiZXhwIjoxNzgwOTQwODA5fQ.AKcLsOjTR_zIUoN6S86sR0HI2r2bjHA-P_AZhC2UtPo
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:46:51.687 [main] DEBUG com.intuit.karate - response time in milliseconds: 1452
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"1082-QT4ZbdjMtN4iet91CQH0/tOTLf8"
+1 < x-cloud-trace-context: 2f3e6acc36f58cb495a5c9e084c95230
+1 < date: Thu, 09 Apr 2026 17:46:51 GMT
+1 < server: Google Frontend
+1 < Content-Length: 4226
+{"articles":[{"slug":"Ronel-Rivers-51031","title":"Ronel Rivers","description":"Pentos","body":"Every flight begins with a fall.","tagList":["Long"],"createdAt":"2026-04-08T22:20:06.628Z","updatedAt":"2026-04-08T22:20:06.628Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Quaro-51031","title":"Quaro","description":"Myr","body":"Things are not always as they seemed, much that may seem evil can be good.","tagList":["Ball"],"createdAt":"2026-04-08T22:16:47.241Z","updatedAt":"2026-04-08T22:16:47.241Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Pollitor-51031","title":"Pollitor","description":"Lys","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Myre of Harlaw"],"createdAt":"2026-04-08T22:09:47.732Z","updatedAt":"2026-04-08T22:09:47.732Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-51031","title":"Harbert Paege","description":"Bayasabhad","body":"Nothing burns like the cold.","tagList":["Tarth of Evenfall Hall"],"createdAt":"2026-04-08T22:04:36.033Z","updatedAt":"2026-04-08T22:04:36.033Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-51031","title":"Aeron Greyjoy","description":"Chroyane","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":["Pommingham"],"createdAt":"2026-04-08T21:58:45.073Z","updatedAt":"2026-04-08T21:58:45.073Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Cotter-Pyke-51031","title":"Cotter Pyke","description":"Old Ghis","body":"Summer will end soon enough, and childhood as well.","tagList":["Wendwater"],"createdAt":"2026-04-08T21:56:46.393Z","updatedAt":"2026-04-08T21:56:46.393Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Catelyn-Stark-51031","title":"Catelyn Stark","description":"Meereen","body":"Do the dead frighten you?","tagList":["Meadows of Grassy Vale"],"createdAt":"2026-04-08T21:54:59.254Z","updatedAt":"2026-04-08T21:54:59.254Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Haggon-51031","title":"Haggon","description":"New Ghis","body":"Winter is coming.","tagList":["Connington of Griffin's Roost"],"createdAt":"2026-04-08T21:47:28.696Z","updatedAt":"2026-04-08T21:47:28.696Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Sargon-Botley-51031","title":"Sargon Botley","description":"Ar Noy","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":["Peake of Starpike"],"createdAt":"2026-04-08T21:33:03.530Z","updatedAt":"2026-04-08T21:33:03.530Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Ghost-of-High-Heart-51031","title":"Ghost of High Heart","description":"King's Landing","body":"The things I do for love.","tagList":["Fowler of Skyreach"],"createdAt":"2026-04-07T06:48:04.236Z","updatedAt":"2026-04-07T06:48:04.236Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+12:46:51.692 [main] DEBUG com.intuit.karate - retry condition not satisfied: response.articles[0].favoritesCount == 1
+12:46:51.693 [main] DEBUG com.intuit.karate - sleeping before retry #1
+12:46:56.709 [main] DEBUG com.intuit.karate - request:
+2 > GET https://conduit-api.bondaracademy.com/api/articles?offset=0&limit=10
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc1NjgwOSwiZXhwIjoxNzgwOTQwODA5fQ.AKcLsOjTR_zIUoN6S86sR0HI2r2bjHA-P_AZhC2UtPo
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+2 > Accept-Encoding: gzip,deflate
+
+
+12:46:58.121 [main] DEBUG com.intuit.karate - response time in milliseconds: 1412
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"1082-QT4ZbdjMtN4iet91CQH0/tOTLf8"
+2 < x-cloud-trace-context: 2a81809bf7158708882376557f45b1c0
+2 < date: Thu, 09 Apr 2026 17:46:57 GMT
+2 < server: Google Frontend
+2 < Content-Length: 4226
+{"articles":[{"slug":"Ronel-Rivers-51031","title":"Ronel Rivers","description":"Pentos","body":"Every flight begins with a fall.","tagList":["Long"],"createdAt":"2026-04-08T22:20:06.628Z","updatedAt":"2026-04-08T22:20:06.628Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Quaro-51031","title":"Quaro","description":"Myr","body":"Things are not always as they seemed, much that may seem evil can be good.","tagList":["Ball"],"createdAt":"2026-04-08T22:16:47.241Z","updatedAt":"2026-04-08T22:16:47.241Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Pollitor-51031","title":"Pollitor","description":"Lys","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Myre of Harlaw"],"createdAt":"2026-04-08T22:09:47.732Z","updatedAt":"2026-04-08T22:09:47.732Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-51031","title":"Harbert Paege","description":"Bayasabhad","body":"Nothing burns like the cold.","tagList":["Tarth of Evenfall Hall"],"createdAt":"2026-04-08T22:04:36.033Z","updatedAt":"2026-04-08T22:04:36.033Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-51031","title":"Aeron Greyjoy","description":"Chroyane","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":["Pommingham"],"createdAt":"2026-04-08T21:58:45.073Z","updatedAt":"2026-04-08T21:58:45.073Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Cotter-Pyke-51031","title":"Cotter Pyke","description":"Old Ghis","body":"Summer will end soon enough, and childhood as well.","tagList":["Wendwater"],"createdAt":"2026-04-08T21:56:46.393Z","updatedAt":"2026-04-08T21:56:46.393Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Catelyn-Stark-51031","title":"Catelyn Stark","description":"Meereen","body":"Do the dead frighten you?","tagList":["Meadows of Grassy Vale"],"createdAt":"2026-04-08T21:54:59.254Z","updatedAt":"2026-04-08T21:54:59.254Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Haggon-51031","title":"Haggon","description":"New Ghis","body":"Winter is coming.","tagList":["Connington of Griffin's Roost"],"createdAt":"2026-04-08T21:47:28.696Z","updatedAt":"2026-04-08T21:47:28.696Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Sargon-Botley-51031","title":"Sargon Botley","description":"Ar Noy","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":["Peake of Starpike"],"createdAt":"2026-04-08T21:33:03.530Z","updatedAt":"2026-04-08T21:33:03.530Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Ghost-of-High-Heart-51031","title":"Ghost of High Heart","description":"King's Landing","body":"The things I do for love.","tagList":["Fowler of Skyreach"],"createdAt":"2026-04-07T06:48:04.236Z","updatedAt":"2026-04-07T06:48:04.236Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+12:46:58.124 [main] DEBUG com.intuit.karate - retry condition not satisfied: response.articles[0].favoritesCount == 1
+12:46:58.124 [main] DEBUG com.intuit.karate - sleeping before retry #2
+12:47:03.139 [main] DEBUG com.intuit.karate - request:
+3 > GET https://conduit-api.bondaracademy.com/api/articles?offset=0&limit=10
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc1NjgwOSwiZXhwIjoxNzgwOTQwODA5fQ.AKcLsOjTR_zIUoN6S86sR0HI2r2bjHA-P_AZhC2UtPo
+3 > Host: conduit-api.bondaracademy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+3 > Accept-Encoding: gzip,deflate
+
+
+12:47:03.748 [main] DEBUG com.intuit.karate - response time in milliseconds: 608
+3 < 200
+3 < x-powered-by: Express
+3 < vary: Origin
+3 < content-type: application/json; charset=utf-8
+3 < etag: W/"1082-QT4ZbdjMtN4iet91CQH0/tOTLf8"
+3 < x-cloud-trace-context: 2342529fe7b48ae69d358fb4bcba8123
+3 < date: Thu, 09 Apr 2026 17:47:03 GMT
+3 < server: Google Frontend
+3 < Content-Length: 4226
+{"articles":[{"slug":"Ronel-Rivers-51031","title":"Ronel Rivers","description":"Pentos","body":"Every flight begins with a fall.","tagList":["Long"],"createdAt":"2026-04-08T22:20:06.628Z","updatedAt":"2026-04-08T22:20:06.628Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Quaro-51031","title":"Quaro","description":"Myr","body":"Things are not always as they seemed, much that may seem evil can be good.","tagList":["Ball"],"createdAt":"2026-04-08T22:16:47.241Z","updatedAt":"2026-04-08T22:16:47.241Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Pollitor-51031","title":"Pollitor","description":"Lys","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Myre of Harlaw"],"createdAt":"2026-04-08T22:09:47.732Z","updatedAt":"2026-04-08T22:09:47.732Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-51031","title":"Harbert Paege","description":"Bayasabhad","body":"Nothing burns like the cold.","tagList":["Tarth of Evenfall Hall"],"createdAt":"2026-04-08T22:04:36.033Z","updatedAt":"2026-04-08T22:04:36.033Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-51031","title":"Aeron Greyjoy","description":"Chroyane","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":["Pommingham"],"createdAt":"2026-04-08T21:58:45.073Z","updatedAt":"2026-04-08T21:58:45.073Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Cotter-Pyke-51031","title":"Cotter Pyke","description":"Old Ghis","body":"Summer will end soon enough, and childhood as well.","tagList":["Wendwater"],"createdAt":"2026-04-08T21:56:46.393Z","updatedAt":"2026-04-08T21:56:46.393Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Catelyn-Stark-51031","title":"Catelyn Stark","description":"Meereen","body":"Do the dead frighten you?","tagList":["Meadows of Grassy Vale"],"createdAt":"2026-04-08T21:54:59.254Z","updatedAt":"2026-04-08T21:54:59.254Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Haggon-51031","title":"Haggon","description":"New Ghis","body":"Winter is coming.","tagList":["Connington of Griffin's Roost"],"createdAt":"2026-04-08T21:47:28.696Z","updatedAt":"2026-04-08T21:47:28.696Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Sargon-Botley-51031","title":"Sargon Botley","description":"Ar Noy","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":["Peake of Starpike"],"createdAt":"2026-04-08T21:33:03.530Z","updatedAt":"2026-04-08T21:33:03.530Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Ghost-of-High-Heart-51031","title":"Ghost of High Heart","description":"King's Landing","body":"The things I do for love.","tagList":["Fowler of Skyreach"],"createdAt":"2026-04-07T06:48:04.236Z","updatedAt":"2026-04-07T06:48:04.236Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+12:47:03.751 [main] DEBUG com.intuit.karate - retry condition not satisfied: response.articles[0].favoritesCount == 1
+12:47:03.752 [main] DEBUG com.intuit.karate - sleeping before retry #3
+12:47:08.758 [main] DEBUG com.intuit.karate - request:
+4 > GET https://conduit-api.bondaracademy.com/api/articles?offset=0&limit=10
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc1NjgwOSwiZXhwIjoxNzgwOTQwODA5fQ.AKcLsOjTR_zIUoN6S86sR0HI2r2bjHA-P_AZhC2UtPo
+4 > Host: conduit-api.bondaracademy.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+4 > Accept-Encoding: gzip,deflate
+
+
+12:47:09.362 [main] DEBUG com.intuit.karate - response time in milliseconds: 603
+4 < 200
+4 < x-powered-by: Express
+4 < vary: Origin
+4 < content-type: application/json; charset=utf-8
+4 < etag: W/"1081-PCruzU+w41ES63Pb2WuQzkOs7j0"
+4 < x-cloud-trace-context: 8c05d23b3f9fb0df001f9b259002458f
+4 < date: Thu, 09 Apr 2026 17:47:09 GMT
+4 < server: Google Frontend
+4 < Content-Length: 4225
+{"articles":[{"slug":"Ronel-Rivers-51031","title":"Ronel Rivers","description":"Pentos","body":"Every flight begins with a fall.","tagList":["Long"],"createdAt":"2026-04-08T22:20:06.628Z","updatedAt":"2026-04-08T22:20:06.628Z","favorited":true,"favoritesCount":1,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Quaro-51031","title":"Quaro","description":"Myr","body":"Things are not always as they seemed, much that may seem evil can be good.","tagList":["Ball"],"createdAt":"2026-04-08T22:16:47.241Z","updatedAt":"2026-04-08T22:16:47.241Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Pollitor-51031","title":"Pollitor","description":"Lys","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Myre of Harlaw"],"createdAt":"2026-04-08T22:09:47.732Z","updatedAt":"2026-04-08T22:09:47.732Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-51031","title":"Harbert Paege","description":"Bayasabhad","body":"Nothing burns like the cold.","tagList":["Tarth of Evenfall Hall"],"createdAt":"2026-04-08T22:04:36.033Z","updatedAt":"2026-04-08T22:04:36.033Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-51031","title":"Aeron Greyjoy","description":"Chroyane","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":["Pommingham"],"createdAt":"2026-04-08T21:58:45.073Z","updatedAt":"2026-04-08T21:58:45.073Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Cotter-Pyke-51031","title":"Cotter Pyke","description":"Old Ghis","body":"Summer will end soon enough, and childhood as well.","tagList":["Wendwater"],"createdAt":"2026-04-08T21:56:46.393Z","updatedAt":"2026-04-08T21:56:46.393Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Catelyn-Stark-51031","title":"Catelyn Stark","description":"Meereen","body":"Do the dead frighten you?","tagList":["Meadows of Grassy Vale"],"createdAt":"2026-04-08T21:54:59.254Z","updatedAt":"2026-04-08T21:54:59.254Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Haggon-51031","title":"Haggon","description":"New Ghis","body":"Winter is coming.","tagList":["Connington of Griffin's Roost"],"createdAt":"2026-04-08T21:47:28.696Z","updatedAt":"2026-04-08T21:47:28.696Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Sargon-Botley-51031","title":"Sargon Botley","description":"Ar Noy","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":["Peake of Starpike"],"createdAt":"2026-04-08T21:33:03.530Z","updatedAt":"2026-04-08T21:33:03.530Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Ghost-of-High-Heart-51031","title":"Ghost of High Heart","description":"King's Landing","body":"The things I do for love.","tagList":["Fowler of Skyreach"],"createdAt":"2026-04-07T06:48:04.236Z","updatedAt":"2026-04-07T06:48:04.236Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+12:47:09.364 [main] DEBUG com.intuit.karate - retry condition satisfied
+12:47:10.275 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (0 remaining) classpath:Conduit/feature/HomePage.feature
+12:47:10.305 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+12:47:10.727 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.HomePage.json' contains 1 feature(s)
+12:53:56.537 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+12:53:58.900 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:53:58.909 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1775757238902
+12:54:00.839 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:54:00.848 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+12:54:01.390 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+12:54:02.400 [main] DEBUG com.intuit.karate - response time in milliseconds: 1003
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-BEdilJoPzmdSkE3Abxtj7aU+Q+8"
+1 < x-cloud-trace-context: 823dd76f191bf4ea41387eedb2fe50bc
+1 < date: Thu, 09 Apr 2026 17:54:02 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc1NzI0MiwiZXhwIjoxNzgwOTQxMjQyfQ.4uD8JXn8zKRyRCG5PWesZyQnr9oaHVHsq3Cbc2LQ63Q"}}
+
+12:54:02.413 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+12:54:02.434 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc1NzI0MiwiZXhwIjoxNzgwOTQxMjQyfQ.4uD8JXn8zKRyRCG5PWesZyQnr9oaHVHsq3Cbc2LQ63Q
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:54:03.035 [main] DEBUG com.intuit.karate - response time in milliseconds: 600
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"1082-QT4ZbdjMtN4iet91CQH0/tOTLf8"
+1 < x-cloud-trace-context: 683c76379d01312cb494464d6599083e
+1 < date: Thu, 09 Apr 2026 17:54:02 GMT
+1 < server: Google Frontend
+1 < Content-Length: 4226
+{"articles":[{"slug":"Ronel-Rivers-51031","title":"Ronel Rivers","description":"Pentos","body":"Every flight begins with a fall.","tagList":["Long"],"createdAt":"2026-04-08T22:20:06.628Z","updatedAt":"2026-04-08T22:20:06.628Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Quaro-51031","title":"Quaro","description":"Myr","body":"Things are not always as they seemed, much that may seem evil can be good.","tagList":["Ball"],"createdAt":"2026-04-08T22:16:47.241Z","updatedAt":"2026-04-08T22:16:47.241Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Pollitor-51031","title":"Pollitor","description":"Lys","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Myre of Harlaw"],"createdAt":"2026-04-08T22:09:47.732Z","updatedAt":"2026-04-08T22:09:47.732Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-51031","title":"Harbert Paege","description":"Bayasabhad","body":"Nothing burns like the cold.","tagList":["Tarth of Evenfall Hall"],"createdAt":"2026-04-08T22:04:36.033Z","updatedAt":"2026-04-08T22:04:36.033Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-51031","title":"Aeron Greyjoy","description":"Chroyane","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":["Pommingham"],"createdAt":"2026-04-08T21:58:45.073Z","updatedAt":"2026-04-08T21:58:45.073Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Cotter-Pyke-51031","title":"Cotter Pyke","description":"Old Ghis","body":"Summer will end soon enough, and childhood as well.","tagList":["Wendwater"],"createdAt":"2026-04-08T21:56:46.393Z","updatedAt":"2026-04-08T21:56:46.393Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Catelyn-Stark-51031","title":"Catelyn Stark","description":"Meereen","body":"Do the dead frighten you?","tagList":["Meadows of Grassy Vale"],"createdAt":"2026-04-08T21:54:59.254Z","updatedAt":"2026-04-08T21:54:59.254Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Haggon-51031","title":"Haggon","description":"New Ghis","body":"Winter is coming.","tagList":["Connington of Griffin's Roost"],"createdAt":"2026-04-08T21:47:28.696Z","updatedAt":"2026-04-08T21:47:28.696Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Sargon-Botley-51031","title":"Sargon Botley","description":"Ar Noy","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":["Peake of Starpike"],"createdAt":"2026-04-08T21:33:03.530Z","updatedAt":"2026-04-08T21:33:03.530Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Ghost-of-High-Heart-51031","title":"Ghost of High Heart","description":"King's Landing","body":"The things I do for love.","tagList":["Fowler of Skyreach"],"createdAt":"2026-04-07T06:48:04.236Z","updatedAt":"2026-04-07T06:48:04.236Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+12:54:08.943 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (0 remaining) classpath:Conduit/feature/HomePage.feature
+12:54:08.975 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+12:54:09.290 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.HomePage.json' contains 1 feature(s)
+12:54:38.197 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+12:54:40.049 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:54:40.057 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1775757280051
+12:54:41.396 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:54:41.402 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+12:54:41.794 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+12:54:42.833 [main] DEBUG com.intuit.karate - response time in milliseconds: 1034
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-+mqt7wyvGcLZ8KxHrHmL6cgAF4I"
+1 < x-cloud-trace-context: 49d957be2144e3e19af9fdc636989ffb
+1 < date: Thu, 09 Apr 2026 17:54:42 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc1NzI4MiwiZXhwIjoxNzgwOTQxMjgyfQ.cMPkULwUWXwHAzlyLZBFq_tCGMDif05XfWm7Cgk8ejg"}}
+
+12:54:42.851 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+12:54:42.877 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc1NzI4MiwiZXhwIjoxNzgwOTQxMjgyfQ.cMPkULwUWXwHAzlyLZBFq_tCGMDif05XfWm7Cgk8ejg
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:54:43.467 [main] DEBUG com.intuit.karate - response time in milliseconds: 589
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"1082-QT4ZbdjMtN4iet91CQH0/tOTLf8"
+1 < x-cloud-trace-context: 1a8a7a4d19d2108497dacb67ebc8dcf9;o=1
+1 < date: Thu, 09 Apr 2026 17:54:43 GMT
+1 < server: Google Frontend
+1 < Content-Length: 4226
+{"articles":[{"slug":"Ronel-Rivers-51031","title":"Ronel Rivers","description":"Pentos","body":"Every flight begins with a fall.","tagList":["Long"],"createdAt":"2026-04-08T22:20:06.628Z","updatedAt":"2026-04-08T22:20:06.628Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Quaro-51031","title":"Quaro","description":"Myr","body":"Things are not always as they seemed, much that may seem evil can be good.","tagList":["Ball"],"createdAt":"2026-04-08T22:16:47.241Z","updatedAt":"2026-04-08T22:16:47.241Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Pollitor-51031","title":"Pollitor","description":"Lys","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":["Myre of Harlaw"],"createdAt":"2026-04-08T22:09:47.732Z","updatedAt":"2026-04-08T22:09:47.732Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Harbert-Paege-51031","title":"Harbert Paege","description":"Bayasabhad","body":"Nothing burns like the cold.","tagList":["Tarth of Evenfall Hall"],"createdAt":"2026-04-08T22:04:36.033Z","updatedAt":"2026-04-08T22:04:36.033Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-51031","title":"Aeron Greyjoy","description":"Chroyane","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":["Pommingham"],"createdAt":"2026-04-08T21:58:45.073Z","updatedAt":"2026-04-08T21:58:45.073Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Cotter-Pyke-51031","title":"Cotter Pyke","description":"Old Ghis","body":"Summer will end soon enough, and childhood as well.","tagList":["Wendwater"],"createdAt":"2026-04-08T21:56:46.393Z","updatedAt":"2026-04-08T21:56:46.393Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Catelyn-Stark-51031","title":"Catelyn Stark","description":"Meereen","body":"Do the dead frighten you?","tagList":["Meadows of Grassy Vale"],"createdAt":"2026-04-08T21:54:59.254Z","updatedAt":"2026-04-08T21:54:59.254Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Haggon-51031","title":"Haggon","description":"New Ghis","body":"Winter is coming.","tagList":["Connington of Griffin's Roost"],"createdAt":"2026-04-08T21:47:28.696Z","updatedAt":"2026-04-08T21:47:28.696Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Sargon-Botley-51031","title":"Sargon Botley","description":"Ar Noy","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":["Peake of Starpike"],"createdAt":"2026-04-08T21:33:03.530Z","updatedAt":"2026-04-08T21:33:03.530Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Ghost-of-High-Heart-51031","title":"Ghost of High Heart","description":"King's Landing","body":"The things I do for love.","tagList":["Fowler of Skyreach"],"createdAt":"2026-04-07T06:48:04.236Z","updatedAt":"2026-04-07T06:48:04.236Z","favorited":false,"favoritesCount":0,"author":{"username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+12:54:49.105 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (0 remaining) classpath:Conduit/feature/HomePage.feature
+12:54:49.121 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+12:54:49.399 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.HomePage.json' contains 1 feature(s)
+14:51:38.924 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+14:51:40.453 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:51:40.458 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1775764300455
+14:51:41.870 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:51:41.879 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+14:51:42.385 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+14:51:43.578 [main] DEBUG com.intuit.karate - response time in milliseconds: 1185
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-1KDiGcsV66z7kdWI78d2yWLt+nE"
+1 < x-cloud-trace-context: 8a0f2e6b68b0ad102d918246ed8dbb46;o=1
+1 < date: Thu, 09 Apr 2026 19:51:43 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc2NDMwMywiZXhwIjoxNzgwOTQ4MzAzfQ.Nh3ZYKuBii8vbq4WjnjHUTzSMHL-884NDxXZ_Z1KRvs"}}
+
+14:51:43.595 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+14:51:43.633 [main] ERROR com.intuit.karate - classpath:Conduit/feature/HomePage.feature:106
+* match json=={"bar": 10}
+syntax error, expected '==' for match
+classpath:Conduit/feature/HomePage.feature:106
+14:51:44.676 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 4 (0 remaining) classpath:Conduit/feature/HomePage.feature
+14:51:44.701 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+14:51:45.280 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.HomePage.json' contains 1 feature(s)
+14:57:35.237 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+14:57:36.813 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:57:36.822 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1775764656818
+14:57:38.675 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:57:38.685 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+14:57:39.601 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+14:57:40.617 [main] DEBUG com.intuit.karate - response time in milliseconds: 1013
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-fCnnhgl4nxEIziYE1rBWvIT26Kk"
+1 < x-cloud-trace-context: 5de84368cd44c970f10e49fc7d9c6e8b;o=1
+1 < date: Thu, 09 Apr 2026 19:57:40 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc2NDY2MCwiZXhwIjoxNzgwOTQ4NjYwfQ.DeG0-ZYnVQ_Vyetv6cCxhB8-e-TaJ7Ajqc1n65c_9KQ"}}
+
+14:57:40.632 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+14:57:40.663 [main] ERROR com.intuit.karate - classpath:Conduit/feature/HomePage.feature:106
+* match json=={"bar": 10}
+syntax error, expected '==' for match
+classpath:Conduit/feature/HomePage.feature:106
+14:57:41.864 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 4 (0 remaining) classpath:Conduit/feature/HomePage.feature
+14:57:41.888 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+14:57:42.320 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.HomePage.json' contains 1 feature(s)
+15:08:21.859 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+15:08:23.427 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:08:23.432 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1775765303429
+15:08:24.971 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:08:24.978 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+15:08:25.369 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+15:08:27.007 [main] DEBUG com.intuit.karate - response time in milliseconds: 1636
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-eoXVPaBq9eItGFHTyCIuwdHwoEs"
+1 < x-cloud-trace-context: bb71c6dc7c9d459c8751a60f829eac2b;o=1
+1 < date: Thu, 09 Apr 2026 20:08:26 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc2NTMwNiwiZXhwIjoxNzgwOTQ5MzA2fQ.ZYco-MQjImViXn-3tbSZ50f8C1PkbYeIyCi9fBe20V8"}}
+
+15:08:27.021 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+15:08:27.045 [main] ERROR com.intuit.karate - classpath:Conduit/feature/HomePage.feature:106
+* match json=={"bar": '10'}
+syntax error, expected '==' for match
+classpath:Conduit/feature/HomePage.feature:106
+15:08:27.967 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 4 (0 remaining) classpath:Conduit/feature/HomePage.feature
+15:08:27.997 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+15:08:28.388 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.HomePage.json' contains 1 feature(s)
+15:08:56.710 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+15:08:58.254 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:08:58.259 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1775765338256
+15:08:59.662 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:08:59.669 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+15:09:00.092 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+15:09:01.022 [main] DEBUG com.intuit.karate - response time in milliseconds: 927
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-80JEbeSs1ffJh+I2vrLLxEOvBL0"
+1 < x-cloud-trace-context: 90fd9dfe15d222d59e59bb69884dfc99;o=1
+1 < date: Thu, 09 Apr 2026 20:09:00 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc2NTM0MCwiZXhwIjoxNzgwOTQ5MzQwfQ.NIPTaPaKBUsTBGGUMZ6LNBjteQTLLbXRyqp33dji9KE"}}
+
+15:09:01.033 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+15:09:02.066 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (0 remaining) classpath:Conduit/feature/HomePage.feature
+15:09:02.098 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+15:09:02.525 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.HomePage.json' contains 1 feature(s)
+15:11:42.580 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+15:11:45.074 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:11:45.081 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1775765505077
+15:11:46.975 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:11:46.988 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+15:11:47.582 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+15:11:48.719 [main] DEBUG com.intuit.karate - response time in milliseconds: 1129
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-C//HxvPQVHlk3FBAnMxh3eNCxYI"
+1 < x-cloud-trace-context: bbc0e55b2c81e7916483b5258529e054;o=1
+1 < date: Thu, 09 Apr 2026 20:11:48 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc2NTUwOCwiZXhwIjoxNzgwOTQ5NTA4fQ.PU87Q3XbW_JiMafCyv1ojU6GxRAO8X3JIrzmeNtVEck"}}
+
+15:11:48.735 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+15:11:48.776 [main] ERROR com.intuit.karate - classpath:Conduit/feature/HomePage.feature:112
+* match json == {"bar": 10}
+match failed: EQUALS
+  $ | not equal | match failed for name: 'bar' (MAP:MAP)
+  {"bar":"10"}
+  {"bar":10}
+
+    $.bar | data types don't match (STRING:NUMBER)
+    '10'
+    10
+
+classpath:Conduit/feature/HomePage.feature:112
+15:11:50.265 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 4 (0 remaining) classpath:Conduit/feature/HomePage.feature
+15:11:50.306 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+15:11:50.887 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.HomePage.json' contains 1 feature(s)
+15:14:23.908 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+15:14:25.762 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:14:25.770 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1775765665765
+15:14:27.066 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:14:27.073 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+15:14:27.459 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+15:14:28.428 [main] DEBUG com.intuit.karate - response time in milliseconds: 967
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-apgj05r5OGbQCAVNV6LA/vyY7mA"
+1 < x-cloud-trace-context: 42566d0459c3284841e771fd0f0fa1c0;o=1
+1 < date: Thu, 09 Apr 2026 20:14:28 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc2NTY2OCwiZXhwIjoxNzgwOTQ5NjY4fQ.o-DwfWzQk0TY1yUVZrCjglcJXSeLxhn8KYcni4EpUnM"}}
+
+15:14:28.438 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+15:14:29.545 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (0 remaining) classpath:Conduit/feature/HomePage.feature
+15:14:29.593 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+15:14:30.462 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.HomePage.json' contains 1 feature(s)
+15:15:15.619 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+15:15:18.061 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:15:18.069 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1775765718064
+15:15:20.135 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:15:20.146 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+15:15:20.756 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+15:15:21.795 [main] DEBUG com.intuit.karate - response time in milliseconds: 1032
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-lLecVbLOwvm6e2AwoGh1pj9qN7k"
+1 < x-cloud-trace-context: 3427cc39143907772d06de6395f607a3;o=1
+1 < date: Thu, 09 Apr 2026 20:15:21 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc2NTcyMSwiZXhwIjoxNzgwOTQ5NzIxfQ.VKy0vNjGhaZ-KLwUqsDE4AWysnA0C5EnJmzLoapamqw"}}
+
+15:15:21.808 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+15:15:21.850 [main] INFO  com.intuit.karate - The value of json.bar is: 10 
+15:15:22.931 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (0 remaining) classpath:Conduit/feature/HomePage.feature
+15:15:22.978 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+15:15:23.857 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.HomePage.json' contains 1 feature(s)
+15:17:25.961 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+15:17:27.803 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:17:27.811 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1775765847805
+15:17:29.563 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:17:29.573 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+15:17:30.222 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 72
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jesus.quispe@globant.com","password":"Gabylu212208."}}
+
+15:17:31.868 [main] DEBUG com.intuit.karate - response time in milliseconds: 1640
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"142-0NK551cAve/B8QYlg6SqWBk/Zkk"
+1 < x-cloud-trace-context: 530a9d8bf95671f66fcbcd2e1ee31a70;o=1
+1 < date: Thu, 09 Apr 2026 20:17:31 GMT
+1 < server: Google Frontend
+1 < Content-Length: 322
+{"user":{"email":"jesus.quispe@globant.com","username":"jesusdquispec","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc2NTg1MSwiZXhwIjoxNzgwOTQ5ODUxfQ.HY3YbConkl0319z6hhLc1rZiO5lMbk1_fFc4HHBFV_s"}}
+
+15:17:31.883 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+15:17:31.955 [main] INFO  com.intuit.karate - The value of json.bar is: 10 
+15:17:31.956 [main] INFO  com.intuit.karate - The value of json2.bar is: 10 
+15:17:33.036 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (0 remaining) classpath:Conduit/feature/HomePage.feature
+15:17:33.072 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+15:17:33.619 [main] INFO  n.m.cucumber.ReportParser - File 'C:\Users\jesus.quispe\Documents\learn2KarateProject\myproject\target\karate-reports\Conduit.feature.HomePage.json' contains 1 feature(s)

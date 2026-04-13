@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"cea469b7-5eb5-49c7-912c-119fa4a1119c",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>Conduit.feature.HomePage</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-04-09 12:47:09 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[4:85]"><span>[4:85]</span> <span>Retry call</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">Conduit/feature/HomePage.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">&#39;GET&#39; Tests for the home page</span>
+          <span class="feature-description">//Implementing Backgroung as the url is the same for all scenarios</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:85]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">debug</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:85]</span>
+                <span class="scenario-name">Retry call</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>19139</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:85]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:85]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">12:46:50.221 &lt;&lt; lock released, cached callSingle: classpath:helpers/CreateToken.feature
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.6.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helpers.CreateToken</div>
+      </div>
+      <div class="time-cell passed">1622</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://conduit-api.bondaracademy.com/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.4">12:46:48.484 karate.env system property was: null 
+12:46:48.494 &gt;&gt; lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># And request {&quot;user&quot;:{&quot;email&quot;:&quot;jesus.quispe@globant.com&quot;,&quot;password&quot;:&quot;Gabylu212208.&quot;}}</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># Changing to receive parameters</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;:{&quot;email&quot;:&quot;#(userEmail)&quot;,&quot;password&quot;:&quot;#(userPassword)&quot;}}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">36</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># Check the update on the line above with karate-config.js configuration And request {&quot;user&quot;:{&quot;email&quot;:&quot;#(email)&quot;,&quot;password&quot;:&quot;#(password)&quot;}}</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1573</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.10">12:46:49.150 request:
+1 &gt; POST https://conduit-api.bondaracademy.com/api/users/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 72
+1 &gt; Host: conduit-api.bondaracademy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;jesus.quispe@globant.com&quot;,&quot;password&quot;:&quot;Gabylu212208.&quot;}}
+
+12:46:50.211 response time in milliseconds: 1056
+1 &lt; 200
+1 &lt; x-powered-by: Express
+1 &lt; vary: Origin
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; etag: W/&quot;142-A5dMHuHRB1oKITnxcCheHPD7iBE&quot;
+1 &lt; x-cloud-trace-context: 434b520d4c19c7ef53794dbb5c340916
+1 &lt; date: Thu, 09 Apr 2026 17:46:49 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 322
+{&quot;user&quot;:{&quot;email&quot;:&quot;jesus.quispe@globant.com&quot;,&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc1NjgwOSwiZXhwIjoxNzgwOTQwODA5fQ.AKcLsOjTR_zIUoN6S86sR0HI2r2bjHA-P_AZhC2UtPo&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = response.user.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure retry = { count: 10, interval: 5000}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.87">
+      <div class="step-ref passed">87</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>params {limit: 10, offset: 0}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.88">
+      <div class="step-ref passed">88</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.89">
+      <div class="step-ref passed">89</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>retry until response.articles[0].favoritesCount == 1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.90">
+      <div class="step-ref passed">90</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">19135</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.90">12:46:50.235 request:
+1 &gt; GET https://conduit-api.bondaracademy.com/api/articles?offset=0&amp;limit=10
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc1NjgwOSwiZXhwIjoxNzgwOTQwODA5fQ.AKcLsOjTR_zIUoN6S86sR0HI2r2bjHA-P_AZhC2UtPo
+1 &gt; Host: conduit-api.bondaracademy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:46:51.688 response time in milliseconds: 1452
+1 &lt; 200
+1 &lt; x-powered-by: Express
+1 &lt; vary: Origin
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; etag: W/&quot;1082-QT4ZbdjMtN4iet91CQH0/tOTLf8&quot;
+1 &lt; x-cloud-trace-context: 2f3e6acc36f58cb495a5c9e084c95230
+1 &lt; date: Thu, 09 Apr 2026 17:46:51 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 4226
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Ronel-Rivers-51031&quot;,&quot;title&quot;:&quot;Ronel Rivers&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Every flight begins with a fall.&quot;,&quot;tagList&quot;:[&quot;Long&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:20:06.628Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:20:06.628Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Quaro-51031&quot;,&quot;title&quot;:&quot;Quaro&quot;,&quot;description&quot;:&quot;Myr&quot;,&quot;body&quot;:&quot;Things are not always as they seemed, much that may seem evil can be good.&quot;,&quot;tagList&quot;:[&quot;Ball&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:16:47.241Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:16:47.241Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Pollitor-51031&quot;,&quot;title&quot;:&quot;Pollitor&quot;,&quot;description&quot;:&quot;Lys&quot;,&quot;body&quot;:&quot;A lion doesn&#39;t concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[&quot;Myre of Harlaw&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:09:47.732Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:09:47.732Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Harbert-Paege-51031&quot;,&quot;title&quot;:&quot;Harbert Paege&quot;,&quot;description&quot;:&quot;Bayasabhad&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[&quot;Tarth of Evenfall Hall&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:04:36.033Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:04:36.033Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aeron-Greyjoy-51031&quot;,&quot;title&quot;:&quot;Aeron Greyjoy&quot;,&quot;description&quot;:&quot;Chroyane&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I&#39;ll sleep more easily by night.&quot;,&quot;tagList&quot;:[&quot;Pommingham&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:58:45.073Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:58:45.073Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Cotter-Pyke-51031&quot;,&quot;title&quot;:&quot;Cotter Pyke&quot;,&quot;description&quot;:&quot;Old Ghis&quot;,&quot;body&quot;:&quot;Summer will end soon enough, and childhood as well.&quot;,&quot;tagList&quot;:[&quot;Wendwater&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:56:46.393Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:56:46.393Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Catelyn-Stark-51031&quot;,&quot;title&quot;:&quot;Catelyn Stark&quot;,&quot;description&quot;:&quot;Meereen&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[&quot;Meadows of Grassy Vale&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:54:59.254Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:54:59.254Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Haggon-51031&quot;,&quot;title&quot;:&quot;Haggon&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;Winter is coming.&quot;,&quot;tagList&quot;:[&quot;Connington of Griffin&#39;s Roost&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:47:28.696Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:47:28.696Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Sargon-Botley-51031&quot;,&quot;title&quot;:&quot;Sargon Botley&quot;,&quot;description&quot;:&quot;Ar Noy&quot;,&quot;body&quot;:&quot;When the snows fall and the white winds blow, the lone wolf dies but the pack survives.&quot;,&quot;tagList&quot;:[&quot;Peake of Starpike&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:33:03.530Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:33:03.530Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Ghost-of-High-Heart-51031&quot;,&quot;title&quot;:&quot;Ghost of High Heart&quot;,&quot;description&quot;:&quot;King&#39;s Landing&quot;,&quot;body&quot;:&quot;The things I do for love.&quot;,&quot;tagList&quot;:[&quot;Fowler of Skyreach&quot;],&quot;createdAt&quot;:&quot;2026-04-07T06:48:04.236Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T06:48:04.236Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:21}
+
+12:46:51.692 retry condition not satisfied: response.articles[0].favoritesCount == 1
+12:46:51.693 sleeping before retry #1
+12:46:56.709 request:
+2 &gt; GET https://conduit-api.bondaracademy.com/api/articles?offset=0&amp;limit=10
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc1NjgwOSwiZXhwIjoxNzgwOTQwODA5fQ.AKcLsOjTR_zIUoN6S86sR0HI2r2bjHA-P_AZhC2UtPo
+2 &gt; Host: conduit-api.bondaracademy.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+12:46:58.122 response time in milliseconds: 1412
+2 &lt; 200
+2 &lt; x-powered-by: Express
+2 &lt; vary: Origin
+2 &lt; content-type: application/json; charset=utf-8
+2 &lt; etag: W/&quot;1082-QT4ZbdjMtN4iet91CQH0/tOTLf8&quot;
+2 &lt; x-cloud-trace-context: 2a81809bf7158708882376557f45b1c0
+2 &lt; date: Thu, 09 Apr 2026 17:46:57 GMT
+2 &lt; server: Google Frontend
+2 &lt; Content-Length: 4226
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Ronel-Rivers-51031&quot;,&quot;title&quot;:&quot;Ronel Rivers&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Every flight begins with a fall.&quot;,&quot;tagList&quot;:[&quot;Long&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:20:06.628Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:20:06.628Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Quaro-51031&quot;,&quot;title&quot;:&quot;Quaro&quot;,&quot;description&quot;:&quot;Myr&quot;,&quot;body&quot;:&quot;Things are not always as they seemed, much that may seem evil can be good.&quot;,&quot;tagList&quot;:[&quot;Ball&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:16:47.241Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:16:47.241Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Pollitor-51031&quot;,&quot;title&quot;:&quot;Pollitor&quot;,&quot;description&quot;:&quot;Lys&quot;,&quot;body&quot;:&quot;A lion doesn&#39;t concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[&quot;Myre of Harlaw&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:09:47.732Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:09:47.732Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Harbert-Paege-51031&quot;,&quot;title&quot;:&quot;Harbert Paege&quot;,&quot;description&quot;:&quot;Bayasabhad&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[&quot;Tarth of Evenfall Hall&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:04:36.033Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:04:36.033Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aeron-Greyjoy-51031&quot;,&quot;title&quot;:&quot;Aeron Greyjoy&quot;,&quot;description&quot;:&quot;Chroyane&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I&#39;ll sleep more easily by night.&quot;,&quot;tagList&quot;:[&quot;Pommingham&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:58:45.073Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:58:45.073Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Cotter-Pyke-51031&quot;,&quot;title&quot;:&quot;Cotter Pyke&quot;,&quot;description&quot;:&quot;Old Ghis&quot;,&quot;body&quot;:&quot;Summer will end soon enough, and childhood as well.&quot;,&quot;tagList&quot;:[&quot;Wendwater&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:56:46.393Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:56:46.393Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Catelyn-Stark-51031&quot;,&quot;title&quot;:&quot;Catelyn Stark&quot;,&quot;description&quot;:&quot;Meereen&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[&quot;Meadows of Grassy Vale&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:54:59.254Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:54:59.254Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Haggon-51031&quot;,&quot;title&quot;:&quot;Haggon&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;Winter is coming.&quot;,&quot;tagList&quot;:[&quot;Connington of Griffin&#39;s Roost&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:47:28.696Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:47:28.696Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Sargon-Botley-51031&quot;,&quot;title&quot;:&quot;Sargon Botley&quot;,&quot;description&quot;:&quot;Ar Noy&quot;,&quot;body&quot;:&quot;When the snows fall and the white winds blow, the lone wolf dies but the pack survives.&quot;,&quot;tagList&quot;:[&quot;Peake of Starpike&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:33:03.530Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:33:03.530Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Ghost-of-High-Heart-51031&quot;,&quot;title&quot;:&quot;Ghost of High Heart&quot;,&quot;description&quot;:&quot;King&#39;s Landing&quot;,&quot;body&quot;:&quot;The things I do for love.&quot;,&quot;tagList&quot;:[&quot;Fowler of Skyreach&quot;],&quot;createdAt&quot;:&quot;2026-04-07T06:48:04.236Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T06:48:04.236Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:21}
+
+12:46:58.124 retry condition not satisfied: response.articles[0].favoritesCount == 1
+12:46:58.124 sleeping before retry #2
+12:47:03.139 request:
+3 &gt; GET https://conduit-api.bondaracademy.com/api/articles?offset=0&amp;limit=10
+3 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc1NjgwOSwiZXhwIjoxNzgwOTQwODA5fQ.AKcLsOjTR_zIUoN6S86sR0HI2r2bjHA-P_AZhC2UtPo
+3 &gt; Host: conduit-api.bondaracademy.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+12:47:03.749 response time in milliseconds: 608
+3 &lt; 200
+3 &lt; x-powered-by: Express
+3 &lt; vary: Origin
+3 &lt; content-type: application/json; charset=utf-8
+3 &lt; etag: W/&quot;1082-QT4ZbdjMtN4iet91CQH0/tOTLf8&quot;
+3 &lt; x-cloud-trace-context: 2342529fe7b48ae69d358fb4bcba8123
+3 &lt; date: Thu, 09 Apr 2026 17:47:03 GMT
+3 &lt; server: Google Frontend
+3 &lt; Content-Length: 4226
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Ronel-Rivers-51031&quot;,&quot;title&quot;:&quot;Ronel Rivers&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Every flight begins with a fall.&quot;,&quot;tagList&quot;:[&quot;Long&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:20:06.628Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:20:06.628Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Quaro-51031&quot;,&quot;title&quot;:&quot;Quaro&quot;,&quot;description&quot;:&quot;Myr&quot;,&quot;body&quot;:&quot;Things are not always as they seemed, much that may seem evil can be good.&quot;,&quot;tagList&quot;:[&quot;Ball&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:16:47.241Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:16:47.241Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Pollitor-51031&quot;,&quot;title&quot;:&quot;Pollitor&quot;,&quot;description&quot;:&quot;Lys&quot;,&quot;body&quot;:&quot;A lion doesn&#39;t concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[&quot;Myre of Harlaw&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:09:47.732Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:09:47.732Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Harbert-Paege-51031&quot;,&quot;title&quot;:&quot;Harbert Paege&quot;,&quot;description&quot;:&quot;Bayasabhad&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[&quot;Tarth of Evenfall Hall&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:04:36.033Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:04:36.033Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aeron-Greyjoy-51031&quot;,&quot;title&quot;:&quot;Aeron Greyjoy&quot;,&quot;description&quot;:&quot;Chroyane&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I&#39;ll sleep more easily by night.&quot;,&quot;tagList&quot;:[&quot;Pommingham&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:58:45.073Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:58:45.073Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Cotter-Pyke-51031&quot;,&quot;title&quot;:&quot;Cotter Pyke&quot;,&quot;description&quot;:&quot;Old Ghis&quot;,&quot;body&quot;:&quot;Summer will end soon enough, and childhood as well.&quot;,&quot;tagList&quot;:[&quot;Wendwater&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:56:46.393Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:56:46.393Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Catelyn-Stark-51031&quot;,&quot;title&quot;:&quot;Catelyn Stark&quot;,&quot;description&quot;:&quot;Meereen&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[&quot;Meadows of Grassy Vale&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:54:59.254Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:54:59.254Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Haggon-51031&quot;,&quot;title&quot;:&quot;Haggon&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;Winter is coming.&quot;,&quot;tagList&quot;:[&quot;Connington of Griffin&#39;s Roost&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:47:28.696Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:47:28.696Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Sargon-Botley-51031&quot;,&quot;title&quot;:&quot;Sargon Botley&quot;,&quot;description&quot;:&quot;Ar Noy&quot;,&quot;body&quot;:&quot;When the snows fall and the white winds blow, the lone wolf dies but the pack survives.&quot;,&quot;tagList&quot;:[&quot;Peake of Starpike&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:33:03.530Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:33:03.530Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Ghost-of-High-Heart-51031&quot;,&quot;title&quot;:&quot;Ghost of High Heart&quot;,&quot;description&quot;:&quot;King&#39;s Landing&quot;,&quot;body&quot;:&quot;The things I do for love.&quot;,&quot;tagList&quot;:[&quot;Fowler of Skyreach&quot;],&quot;createdAt&quot;:&quot;2026-04-07T06:48:04.236Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T06:48:04.236Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:21}
+
+12:47:03.752 retry condition not satisfied: response.articles[0].favoritesCount == 1
+12:47:03.752 sleeping before retry #3
+12:47:08.758 request:
+4 &gt; GET https://conduit-api.bondaracademy.com/api/articles?offset=0&amp;limit=10
+4 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MTAzMX0sImlhdCI6MTc3NTc1NjgwOSwiZXhwIjoxNzgwOTQwODA5fQ.AKcLsOjTR_zIUoN6S86sR0HI2r2bjHA-P_AZhC2UtPo
+4 &gt; Host: conduit-api.bondaracademy.com
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+4 &gt; Accept-Encoding: gzip,deflate
+
+
+12:47:09.363 response time in milliseconds: 603
+4 &lt; 200
+4 &lt; x-powered-by: Express
+4 &lt; vary: Origin
+4 &lt; content-type: application/json; charset=utf-8
+4 &lt; etag: W/&quot;1081-PCruzU+w41ES63Pb2WuQzkOs7j0&quot;
+4 &lt; x-cloud-trace-context: 8c05d23b3f9fb0df001f9b259002458f
+4 &lt; date: Thu, 09 Apr 2026 17:47:09 GMT
+4 &lt; server: Google Frontend
+4 &lt; Content-Length: 4225
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Ronel-Rivers-51031&quot;,&quot;title&quot;:&quot;Ronel Rivers&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Every flight begins with a fall.&quot;,&quot;tagList&quot;:[&quot;Long&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:20:06.628Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:20:06.628Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Quaro-51031&quot;,&quot;title&quot;:&quot;Quaro&quot;,&quot;description&quot;:&quot;Myr&quot;,&quot;body&quot;:&quot;Things are not always as they seemed, much that may seem evil can be good.&quot;,&quot;tagList&quot;:[&quot;Ball&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:16:47.241Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:16:47.241Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Pollitor-51031&quot;,&quot;title&quot;:&quot;Pollitor&quot;,&quot;description&quot;:&quot;Lys&quot;,&quot;body&quot;:&quot;A lion doesn&#39;t concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[&quot;Myre of Harlaw&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:09:47.732Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:09:47.732Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Harbert-Paege-51031&quot;,&quot;title&quot;:&quot;Harbert Paege&quot;,&quot;description&quot;:&quot;Bayasabhad&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[&quot;Tarth of Evenfall Hall&quot;],&quot;createdAt&quot;:&quot;2026-04-08T22:04:36.033Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T22:04:36.033Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aeron-Greyjoy-51031&quot;,&quot;title&quot;:&quot;Aeron Greyjoy&quot;,&quot;description&quot;:&quot;Chroyane&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I&#39;ll sleep more easily by night.&quot;,&quot;tagList&quot;:[&quot;Pommingham&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:58:45.073Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:58:45.073Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Cotter-Pyke-51031&quot;,&quot;title&quot;:&quot;Cotter Pyke&quot;,&quot;description&quot;:&quot;Old Ghis&quot;,&quot;body&quot;:&quot;Summer will end soon enough, and childhood as well.&quot;,&quot;tagList&quot;:[&quot;Wendwater&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:56:46.393Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:56:46.393Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Catelyn-Stark-51031&quot;,&quot;title&quot;:&quot;Catelyn Stark&quot;,&quot;description&quot;:&quot;Meereen&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[&quot;Meadows of Grassy Vale&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:54:59.254Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:54:59.254Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Haggon-51031&quot;,&quot;title&quot;:&quot;Haggon&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;Winter is coming.&quot;,&quot;tagList&quot;:[&quot;Connington of Griffin&#39;s Roost&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:47:28.696Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:47:28.696Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Sargon-Botley-51031&quot;,&quot;title&quot;:&quot;Sargon Botley&quot;,&quot;description&quot;:&quot;Ar Noy&quot;,&quot;body&quot;:&quot;When the snows fall and the white winds blow, the lone wolf dies but the pack survives.&quot;,&quot;tagList&quot;:[&quot;Peake of Starpike&quot;],&quot;createdAt&quot;:&quot;2026-04-08T21:33:03.530Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-08T21:33:03.530Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Ghost-of-High-Heart-51031&quot;,&quot;title&quot;:&quot;Ghost of High Heart&quot;,&quot;description&quot;:&quot;King&#39;s Landing&quot;,&quot;body&quot;:&quot;The things I do for love.&quot;,&quot;tagList&quot;:[&quot;Fowler of Skyreach&quot;],&quot;createdAt&quot;:&quot;2026-04-07T06:48:04.236Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T06:48:04.236Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;jesusdquispec&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:21}
+
+12:47:09.364 retry condition satisfied
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref passed">91</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
